@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   
@@ -13,7 +13,7 @@
 <body class="index-page">
 
   <!-- ======= Header ======= -->
-  <?php include 'includes/head.php'; ?>
+  <?php include 'includes/header.php'; ?>
 
   <main class="main">
 
