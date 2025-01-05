@@ -1,4 +1,3 @@
 <?php
 
-$db = new Db(DATABASE_HOST, DATABASE_NAME, DATABASE_USER, DATABASE_PASSWORD);
-$db->setFetchMode(PDO::FETCH_ASSOC);
+$db = new PDO('mysql:host='.DATABASE_HOST.';dbname='.DATABASE_NAME.';charset=utf8', DATABASE_USER, DATABASE_PASSWORD);

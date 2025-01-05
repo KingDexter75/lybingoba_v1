@@ -16,7 +16,7 @@ if (isset($_GET['page']) AND !empty($_GET['page'])) {
 }
 
 
-$_SESSION['lang'] = getUserLanguage();
+// $_SESSION['lang'] = getUserLanguage();
 
 
 // Array contenant toutes les pages
@@ -25,7 +25,7 @@ $allPages = scandir('controllers/');
 // Vérification de l'existence de la page
 if (in_array($page.'_controller.php', $allPages)) {
 
-    $lang = getPageLanguage($_SESSION['lang'], ['header', $page, 'footer']);
+    // $lang = getPageLanguage($_SESSION['lang'], ['header', $page, 'footer']);
 
     // Inclusion de la page
     include_once 'models/'.$page.'_model.php';

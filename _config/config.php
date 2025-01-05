@@ -49,4 +49,4 @@ define("DATABASE_PASSWORD", "");
 
 
 // Language
-define("DEFAULT_LANGUAGE", "fr");
+// define("DEFAULT_LANGUAGE", "fr");
