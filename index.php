@@ -34,6 +34,9 @@ if (in_array($page.'_controller.php', $allPages)) {
 
 } else {
 
-    echo 'Erreur 404';
+    // Inclusion de la page erreur
+    include_once 'models/error_model.php';
+    include_once 'controllers/error_controller.php';
+    include_once 'views/error_view.php';
 
 }

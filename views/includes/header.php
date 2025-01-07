@@ -9,13 +9,13 @@
 
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="#hero" class="active">Accueill</a></li>
-                <li><a href="#about">A propos</a></li>
-                <li><a href="#services">Education</a></li>
-                <li><a href="#ap">Administration</a></li>
-                <li><a href="team.html">Les AP</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="#cooperative">Cooperative</a></li>
+                <li><a href="<?= PATH ?>#hero" class="active">Accueill</a></li>
+                <li><a href="<?= PATH ?>#about">A propos</a></li>
+                <li><a href="<?= PATH ?>#services">Education</a></li>
+                <li><a href="<?= PATH ?>#ap">Administration</a></li>
+                <li><a href="<?= PATH ?>team">Les AP</a></li>
+                <li><a href="<?= PATH ?>blog">Blog</a></li>
+                <li><a href="<?= PATH ?>#cooperative">Cooperative</a></li>
                 <li class="dropdown"><a href="#"><span>Trimestre</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                         <li><a href="#">Trimestre 1</a></li>

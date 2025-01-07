@@ -408,7 +408,7 @@
               <div class="icon">
                 <i class="bi bi-globe" style="color: #6610f2;"></i>
               </div>
-              <a href="infirmerie-details.html" class="stretched-link">
+              <a href="<?= PATH ?>infirmerie-details" class="stretched-link">
                 <h3>Infirmerie</h3>
               </a>
               <p>Le service d'infirmerie au lycée Bilingue de Ngodi-bakoko joue un rôle crucial dans 

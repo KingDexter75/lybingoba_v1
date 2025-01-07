@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.frem{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('../img/gifs.gif') no-repeat center;
+}
+
+.frem p{
+    position: absolute;
+    top: 3rem;
+    font-size: 7rem;
+    color: #00000063;
+}
+
+.frem h2{
+    position: absolute;
+    bottom: 8rem;
+    font-size: 34px;
+    margin-bottom: 19px;
+}
+
+.frem h5{
+    position: absolute;
+    bottom: 6rem;
+    color: #9c9c9c;
+    margin-bottom: 19px;
+}
+
+.frem a{
+    position: absolute;
+    bottom: 1rem;
+    background: linear-gradient(90deg,hsl(335, 87%, 51%) ,hsl(29, 99%, 67%));
+    padding: 12px 35px;
+    color: white;
+    background-size: 200%;
+    text-decoration: none;
+    font-size: 23px;
+    border-radius: 0 25px;
+    transition: 0.35s ease;
+}
+
+.frem a:is(:hover, :focus) { background-position: right; }
