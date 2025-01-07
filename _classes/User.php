@@ -37,19 +37,12 @@ class User
     static function updateUser($idUser, $loginUser, $passwordUser)
     {
         global $db;
-        $searchInfoUser = $db->prepare('SELECT * FROM user WHERE loginUser=? AND passwordUser=?');
-        $searchInfoUser->execute([$loginUser, $passwordUser]);
-        $nbInfoUser = $searchInfoUser->rowCount();
-        if ($nbInfoUser > 0) {
-            return "Error the user information existing";
+        $updateUser = $db->prepare('UPDATE user SET loginUser=?, passwordUser=? WHERE idUser=?');
+        $updateUser->execute([$loginUser, $passwordUser, $idUser]);
+        if ($updateUser) {
+            return "Success";
         } else {
-            $updateUser = $db->prepare('UPDATE user SET loginUser=?, passwordUser=? WHERE idUser=?');
-            $updateUser->execute([$loginUser, $passwordUser, $idUser]);
-            if ($updateUser) {
-                return "Success";
-            } else {
-                return "Error verify information";
-            }
+            return "Error verify information";
         }
     }
 

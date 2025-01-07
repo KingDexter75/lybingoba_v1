@@ -41,19 +41,12 @@ class Blog
     static function updateBlog($idBlog, $photoBlog, $contenuBlog, $dateBlog, $titreBlog)
     {
         global $db;
-        $searchInfoBlog = $db->prepare('SELECT * FROM blog WHERE dateBlog=? AND titreBlog=?');
-        $searchInfoBlog->execute([$dateBlog, $titreBlog]);
-        $nbInfoBlog = $searchInfoBlog->rowCount();
-        if ($nbInfoBlog > 0) {
-            return "Error the Blog information existing";
+        $updateBlog = $db->prepare('UPDATE blog SET photoBlog=?, contenuBlog=? dateBlog=?, titreBlog=? WHERE idBlog=?');
+        $updateBlog->execute([$photoBlog, $contenuBlog, $dateBlog, $titreBlog, $idBlog]);
+        if ($updateBlog) {
+            return "Success";
         } else {
-            $updateBlog = $db->prepare('UPDATE blog SET photoBlog=?, contenuBlog=? dateBlog=?, titreBlog=? WHERE idBlog=?');
-            $updateBlog->execute([$photoBlog, $contenuBlog, $dateBlog, $titreBlog, $idBlog]);
-            if ($updateBlog) {
-                return "Success";
-            } else {
-                return "Error verify information";
-            }
+            return "Error verify information";
         }
     }
 

@@ -39,19 +39,12 @@ class Ap
     static function updateAp($idAP, $nomAP, $photoAP, $departementAP)
     {
         global $db;
-        $searchInfoAp = $db->prepare('SELECT * FROM AP WHERE nomAP=? AND departementAP=?');
-        $searchInfoAp->execute([$nomAP, $departementAP]);
-        $nbInfoAp = $searchInfoAp->rowCount();
-        if ($nbInfoAp > 0) {
-            return "Error the AP information existing";
+        $updateAp = $db->prepare('UPDATE AP SET nomAP=?, photoAP=?, departementAP=? WHERE idAP=?');
+        $updateAp->execute([$nomAP, $photoAP, $departementAP, $idAP]);
+        if ($updateAp) {
+            return "Success";
         } else {
-            $updateAp = $db->prepare('UPDATE AP SET nomAP=?, photoAP=?, departementAP=? WHERE idAP=?');
-            $updateAp->execute([$nomAP, $photoAP, $departementAP, $idAP]);
-            if ($updateAp) {
-                return "Success";
-            } else {
-                return "Error verify information";
-            }
+            return "Error verify information";
         }
     }
 
