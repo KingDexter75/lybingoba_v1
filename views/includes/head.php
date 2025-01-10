@@ -4,8 +4,8 @@
 <meta name="keywords" content="">
 
 <!-- Favicons -->
-<link href="<?= PATH ?>assets/img/favicon.png" rel="icon">
-<link href="<?= PATH ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="<?= PATH ?>assets/img/WhatsApp Image 2024-10-06 à 19.45.59_f32fda1d.jpg" rel="icon">
+<link href="<?= PATH ?>assets/img/WhatsApp Image 2024-10-06 à 19.45.59_f32fda1d.jpg" rel="apple-touch-icon">
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect">
