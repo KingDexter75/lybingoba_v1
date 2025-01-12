@@ -7,6 +7,8 @@
     <?php include 'includes/head.php'; ?>
 
     <title><?= ucfirst($page) ?></title>
+
+    <link href="<?= PATH ?>assets/css/main.css" rel="stylesheet">
 </head>
 
 <body class="service-details-page">

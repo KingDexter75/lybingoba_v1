@@ -19,6 +19,10 @@
 <link href="<?= PATH ?>assets/vendor/animate.css/animate.min.css" rel="stylesheet">
 <link href="<?= PATH ?>assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 <link href="<?= PATH ?>assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="<?= PATH ?>assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="<?= PATH ?>assets/vendor/quill/quill.snow.css" rel="stylesheet">
+<link href="<?= PATH ?>assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+<link href="<?= PATH ?>assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+<link href="<?= PATH ?>assets/vendor/simple-datatables/style.css" rel="stylesheet"
 
 <!-- Main CSS File -->
-<link href="<?= PATH ?>assets/css/main.css" rel="stylesheet">

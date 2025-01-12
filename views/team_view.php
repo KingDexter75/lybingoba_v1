@@ -8,6 +8,8 @@
 
   <title><?= ucfirst($page) ?></title>
 
+    <link href="<?= PATH ?>assets/css/main.css" rel="stylesheet">
+
 </head>
 
 <body class="index-page">
@@ -16,9 +18,21 @@
   <?php include 'includes/header.php'; ?>
 
   <main class="main">
+      <div class="page-title dark-background">
+          <div class="container position-relative">
+              <h1>Animateur Pedagogique</h1>
+              <p>Les animateurs Pedagogiques du Lycee de NgodiBakoko</p>
+              <nav class="breadcrumbs">
+                  <ol>
+                      <li><a href="<?= PATH ?>home">Accueil</a></li>
+                      <li class="current">Animateur Pedagogique</li>
+                  </ol>
+              </nav>
+          </div>
+      </div><!-- End Page Title -->
 
     <!-- Team Section -->
-    <section id="team" class="team section" style="margin-top: 5em;">
+    <section id="team" class="team section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">

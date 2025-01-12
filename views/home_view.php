@@ -8,6 +8,8 @@
   <!-- ======= Head ======= -->
   <?php include 'includes/head.php'; ?>
 
+    <link href="<?= PATH ?>assets/css/main.css" rel="stylesheet">
+
 </head>
 
 <body class="index-page">
