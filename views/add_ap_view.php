@@ -47,26 +47,26 @@
                                 <div class="row mb-3">
                                     <label for="inputText" class="col-sm-2 col-form-label">Nom AP</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" name="nom">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputPassword" class="col-sm-2 col-form-label">Departement AP</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" name="depart">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputNumber" class="col-sm-2 col-form-label">Image AP</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="file" id="formFile">
+                                        <input class="form-control" type="file" id="formFile" name="image">
                                     </div>
                                 </div>
 
                                 <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label">Submit Button</label>
                                     <div class="col-sm-10">
-                                        <button type="submit" class="btn btn-primary">Valider</button>
+                                        <button type="submit" class="btn btn-primary" name="submit">Valider</button>
                                     </div>
                                 </div>
 
