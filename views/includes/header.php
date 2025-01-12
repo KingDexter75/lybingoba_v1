@@ -11,7 +11,7 @@
             <ul>
                 <li><a href="<?= PATH ?>#hero" class="active">Accueill</a></li>
                 <li><a href="<?= PATH ?>#about">A propos</a></li>
-                <li><a href="<?= PATH ?>#services">Education</a></li>
+                <li><a href="<?= PATH ?>#services">Services</a></li>
                 <li><a href="<?= PATH ?>#ap">Administration</a></li>
                 <li><a href="<?= PATH ?>team">Les AP</a></li>
                 <li><a href="<?= PATH ?>blog">Blog</a></li>

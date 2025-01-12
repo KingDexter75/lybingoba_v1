@@ -38,7 +38,7 @@
           <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">Section Francophone</h2>
             <p class="animate__animated animate__fadeInUp"> Au Lycee Bilingue de Ngodi-bakoko, le sous-systeme Francophone vas de la 6e en Tle A4 All & Esp pour les Litteraire et C & D & TI pour les scientifiques.</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
+            <a href="<?= PATH ?>resultat" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
           </div>
         </div>
 
@@ -47,7 +47,7 @@
           <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">Section Anglophone</h2>
             <p class="animate__animated animate__fadeInUp">Au Lycee Bilingue de Ngodi-bakoko, le sous-systeme Anglophone  vas de from1 en uppersixth art And science.</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
+            <a href="<?= PATH ?>resultat" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
           </div>
         </div>
 
