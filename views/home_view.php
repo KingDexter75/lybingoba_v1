@@ -349,7 +349,7 @@
               <div class="icon">
                 <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
               </div>
-              <a href="labo-details.html" class="stretched-link">
+              <a href="<?= PATH ?>labo-detail" class="stretched-link">
                 <h3> BEPC: 2023-2024</h3>
               </a>
               <p>
@@ -367,7 +367,7 @@
               <div class="icon">
                 <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="<?= PATH ?>service-details" class="stretched-link">
                 <h3>Scolarité</h3>
               </a>
               <p>Le service de la scolarité au lycée de Ngodi-bakoko,  est chargé de la gestion administrative des élèves, 
@@ -382,7 +382,7 @@
               <div class="icon">
                 <i class="bi bi-chat-text" style="color: #20c997;"></i>
               </div>
-              <a href="co-details.html" class="stretched-link">
+              <a href="<?= PATH ?>co-details" class="stretched-link">
                 <h3>Conseillèrs d'orientation</h3>
               </a>
               <p>Les services d'orientation sont des dispositifs mis en place pour accompagner les individus,
@@ -396,7 +396,7 @@
               <div class="icon">
                 <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
               </div>
-              <a href="sport-details.html" class="stretched-link">
+              <a href="<?= PATH ?>sport-details" class="stretched-link">
                 <h3>Service Sport</h3>
               </a>
               <p>Les services sportifs dans un lycée jouent un rôle essentiel dans le développement physique,
@@ -424,7 +424,7 @@
               <div class="icon">
                 <i class="bi bi-clock" style="color: #f3268c;"></i>
               </div>
-              <a href="biblio-details.html" class="stretched-link">
+              <a href="<?= PATH ?>biblio-details" class="stretched-link">
                 <h3>Bibliothèque</h3>
               </a>
               <p>lieu clé pour l'apprentissage, la recherche et le développement personnel des élèves.
