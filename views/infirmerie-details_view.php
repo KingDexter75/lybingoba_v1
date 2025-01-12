@@ -25,7 +25,7 @@
                 <p>Presentation de l'infirmerie du LYBINGOBA.</p>
                 <nav class="breadcrumbs">
                     <ol>
-                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="<?= PATH ?>home">Accueil</a></li>
                         <li class="current">Service Details</li>
                     </ol>
                 </nav>
