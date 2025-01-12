@@ -64,8 +64,27 @@
                             </tr>
                             <tr>
                                 <td><img src="<?= PATH ?>assets/img/WhatsApp Image 2024-10-06 à 19.45.59_f32fda1d.jpg" alt="Profile" class="rounded-circle" style="width: 50px; height: 50px;"></td>
-                                <td>9958</td>
-                                <td>Curicó</td>
+                                <td>54</td>
+                                <td>sdsd</td>
+                            </tr>
+                            <tr>
+                                <td><img src="<?= PATH ?>assets/img/WhatsApp Image 2024-10-06 à 19.45.59_f32fda1d.jpg" alt="Profile" class="rounded-circle" style="width: 50px; height: 50px;"></td>
+                                <td>67</td>
+                                <td>aqw</td>
+                            </tr><tr>
+                                <td><img src="<?= PATH ?>assets/img/WhatsApp Image 2024-10-06 à 19.45.59_f32fda1d.jpg" alt="Profile" class="rounded-circle" style="width: 50px; height: 50px;"></td>
+                                <td>12</td>
+                                <td>rtu</td>
+                            </tr>
+                            <tr>
+                                <td><img src="<?= PATH ?>assets/img/WhatsApp Image 2024-10-06 à 19.45.59_f32fda1d.jpg" alt="Profile" class="rounded-circle" style="width: 50px; height: 50px;"></td>
+                                <td>78</td>
+                                <td>ju</td>
+                            </tr>
+                            <tr>
+                                <td><img src="<?= PATH ?>assets/img/WhatsApp Image 2024-10-06 à 19.45.59_f32fda1d.jpg" alt="Profile" class="rounded-circle" style="width: 50px; height: 50px;"></td>
+                                <td>90</td>
+                                <td>ket</td>
                             </tr>
                             <tr>
                                 <td><img src="<?= PATH ?>assets/img/WhatsApp Image 2024-10-06 à 19.45.59_f32fda1d.jpg" alt="Profile" class="rounded-circle" style="width: 50px; height: 50px;"></td>
