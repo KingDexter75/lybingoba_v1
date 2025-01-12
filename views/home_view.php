@@ -349,7 +349,7 @@
               <div class="icon">
                 <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
               </div>
-              <a href="<?= PATH ?>labo-detail" class="stretched-link">
+              <a href="<?= PATH ?>resultat" class="stretched-link">
                 <h3> BEPC: 2023-2024</h3>
               </a>
               <p>
