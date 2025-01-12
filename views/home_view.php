@@ -828,10 +828,12 @@
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
+              <i class="bi bi-whatsapp flex-shrink-0"></i>
               <div>
-                <h3>Envoyez-nous un e-mail</h3>
-                <p>donaldleugoue@gmail.com</p>
+                  <a href="https://api.whatsapp.com/send?phone=237656476605&text=Bonjour, j'aimerais plus d'information" target="_blank">
+                      <h3>Message Whatsapp</h3>
+                      <p>Contacter Nous</p>
+                  </a>
               </div>
             </div><!-- End Info Item -->
 
