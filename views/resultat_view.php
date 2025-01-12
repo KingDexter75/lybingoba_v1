@@ -21,8 +21,8 @@
         <!-- Page Title -->
         <div class="page-title dark-background">
             <div class="container position-relative">
-                <h1>Infirmerie</h1>
-                <p>Presentation de l'infirmerie du LYBINGOBA.</p>
+                <h1>Nos Resultats</h1>
+                <p>Presentation des differents Resultats aux examens officiels.</p>
                 <nav class="breadcrumbs">
                     <ol>
                         <li><a href="<?= PATH ?>home">Accueil</a></li>
@@ -42,21 +42,27 @@
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
 
                         <div class="service-box">
-                            <h4>les services offerts </h4>
+                            <h4>les differents Examens </h4>
                             <div class="services-list">
-                                <a href="#" class="active"><i class="bi bi-arrow-right-circle"></i><span>Soins de santé.</span></a>
-                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Prévention et éducation à la santé </span></a>
-                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Soutien psychologique</span></a>
-                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Gestion des urgences médicales </span></a>
-                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Confidentialité et écoute </span></a>
+                                <a href="#" class="active"><i class="bi bi-arrow-right-circle"></i><span>CONCOURS D'ENTREE EN 6e</span></a>
+                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>INTERVIEW</span></a>
+                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>BEPC</span></a>
+                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Probatoire</span></a>
+                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>baccalauréat </span></a>
+                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>dci Olever </span></a>
+                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>baccalauréat </span></a>
                             </div>
                         </div><!-- End Services List -->
 
                         <div class="service-box">
                             <h4>Download Catalog</h4>
                             <div class="download-catalog">
+                                <a href="#"><i class="bi bi-filetype-pdf"></i><span>liste des Resultats CONCOURS </span></a>
+                                <a href="#"><i class="bi bi-filetype-pdf"></i><span>liste des classes</span></a>
+                                <a href="#"><i class="bi bi-file-earmark-word"></i><span>liste......</span></a>
                                 <a href="#"><i class="bi bi-filetype-pdf"></i><span>liste des insolvables</span></a>
                                 <a href="#"><i class="bi bi-filetype-pdf"></i><span>liste des classes</span></a>
+                                <a href="#"><i class="bi bi-file-earmark-word"></i><span>liste......</span></a>
                                 <a href="#"><i class="bi bi-file-earmark-word"></i><span>liste......</span></a>
                             </div>
                         </div><!-- End Services List -->

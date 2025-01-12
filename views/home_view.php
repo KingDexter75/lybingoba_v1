@@ -37,7 +37,7 @@
         <div class="carousel-item">
           <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">Section Francophone</h2>
-            <p class="animate__animated animate__fadeInUp"> Au Lycee Bilingue de Ngodi-bakoko, le sous-systeme Francophone vas de la 6e en Tle A4 All & Esp pour les Litteraire et C & D & TI pour les scientifiques.</p>
+            <p class="animate__animated animate__fadeInUp"> Nos differents Resultats aux examens Officier.</p>
             <a href="<?= PATH ?>resultat" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
           </div>
         </div>
@@ -350,13 +350,18 @@
                 <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
               </div>
               <a href="<?= PATH ?>resultat" class="stretched-link">
-                <h3> BEPC: 2023-2024</h3>
+                <h3> POURCENTAGE AUX EXAMENS: 2023-2024</h3>
               </a>
               <p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>Présenté: 430 candidats </span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Admis: 325 Candidats</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Pourcentage: 98% </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>BEPC 98% </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>probatoire A4 :</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Probatoire C  90%</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Baccalauréat A4 90%</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Baccalauréat C 90%</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Baccalauréat D 90%</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>DCI 90%</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>DCI 90%</span></li>
                 </ul>
               </p>
             </div>
