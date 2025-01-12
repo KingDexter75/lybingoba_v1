@@ -28,7 +28,7 @@
         <div class="carousel-item active">
           <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">bienvenue au <span >LYCEE BILINGUE DE NGODI-BAKOKO</span></h2>
-            <p class="animate__animated animate__fadeInUp">le LYBINGOBA est un Etablissement d'enseignants secondaire Bilingue,situee dans la zone de village, plus precisement au village ngodi-bakoko non loin du carrefour ari.</p>
+            <p class="animate__animated animate__fadeInUp">le LYBINGOBA est un Etablissement d'enseignement secondaire Bilingue, située dans la zone de village, plus précisément au village ngodi-bakoko non loin du carrefour Ari.</p>
             <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
           </div>
         </div>
@@ -37,7 +37,7 @@
         <div class="carousel-item">
           <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">Section Francophone</h2>
-            <p class="animate__animated animate__fadeInUp"> Nos differents Resultats aux examens Officier.</p>
+            <p class="animate__animated animate__fadeInUp">Nos différents Résultats aux examens Officier sont disponibles .  .</p>
             <a href="<?= PATH ?>resultat" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
           </div>
         </div>
@@ -46,7 +46,7 @@
         <div class="carousel-item">
           <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">Section Anglophone</h2>
-            <p class="animate__animated animate__fadeInUp">Au Lycee Bilingue de Ngodi-bakoko, le sous-systeme Anglophone  vas de from1 en uppersixth art And science.</p>
+            <p class="animate__animated animate__fadeInUp">Our various results in the Officer exams are available.</p>
             <a href="<?= PATH ?>resultat" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
           </div>
         </div>
@@ -93,7 +93,7 @@
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
             <p>
-              LE LYBINGOBA (LYCEE BILINGUE DE NGODI-BAKOKO), est un établissement secondaire public, situé dans la zone de DOUALA 3e non loin de la chefferie du village NGODI-BAKOKO.
+              LE LYBINGOBA (LYCEE BILINGUE DE NGODI-BAKOKO), est un établissement secondaire public. situé dans la zone de DOUALA 3e non loin de la chefferie du village NGODI-BAKOKO.
                Le Recrutement des élèves se fait juste après leur obtention du CEP ou interview et leur offrent à la fin du cursus des baccalauréats pour les francophone et GCE Advanced 
                level pour la section anglophone. 
                Créer en 2007 comme CES, est devenu LYCEE en fin d’année 2012.
@@ -105,7 +105,7 @@
               <li><i class="bi bi-check2-circle"></i> <span>Premier cycle Francophone de la 6e en 3e All, Esp et Bilingue.</span></li>
               <li><i class="bi bi-check2-circle"></i> <span>Second cycle Francophone de La 2nd A4 All et Esp en Tle A4.</span></li>
               <li><i class="bi bi-check2-circle"></i> <span>Second cycle Francophone de La 2nd C et Esp en Tle C, D et TI.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Premier cycle Anglophone de La From 1  en From V .</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Premier cycle Anglophone de La From 1 en From V .</span></li>
               <li><i class="bi bi-check2-circle"></i> <span>Second cycle Anglophone de La .</span></li>
             </ul>
           </div>
@@ -114,7 +114,7 @@
             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
               <!-- <div class="parallax-bg" style="background-image: url(assets/img/services.jpg);" data-swiper-parallax="-23%"></div> -->
               <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url(assets/img/blog/WhatsApp\ Image\ 2024-10-05\ à\ 15.00.48_d456d52c.jpg);">
+                <div class="swiper-slide" style="background-image: url(assets/img/provi diko1.jpg);">
                   <div class="title" data-swiper-parallax="-300">2007 - 2011</div>
                   <div class="subtitle" data-swiper-parallax="-200">DIKOUME EBELLE EITEL</div>
                   <div class="text" data-swiper-parallax="-100">
@@ -510,11 +510,10 @@
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>PLEG-H-E en histoire. en charge du :
-                    •	Suivi  et évaluation des activités de la section francophone 
-                    • suivi et  de l’envoi des pièces périodiques
-                    •	Collecte et analyse des statistiques 
-                    
+                  <span>PLEG-H-E en histoire.
+                  DISCIPLINES AFFECTEES : 
+                  	RESPONSABLE DE NIVEAUX OU CLASSES:
+                   
                   </span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
