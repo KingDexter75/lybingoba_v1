@@ -12,7 +12,7 @@
             $accept_ext = array('jpg','jpeg','png');
             if (in_array($ext, $accept_ext)){
                 $new_name = uniqid($nom,true).'.'.$ext;
-                $img_path = "assets/img/les AP".$new_name;
+                $img_path = "assets/img/AP/".$new_name;
 
                 $req= Ap::addAp($nom, $img_path,$departement);
                 if ($req=="Success"){
