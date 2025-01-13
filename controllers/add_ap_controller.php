@@ -1,6 +1,6 @@
 <?php
     if ($_POST["submit"]){
-        $nom= $_POST["name"];
+        $nom= $_POST["nom"];
         $departement= $_POST["depart"];
         $img_name = $_FILES['image']['name'];
         $tmp_name = $_FILES['image']['tmp_name'];
@@ -17,12 +17,12 @@
                 $req= Ap::addAp($nom, $img_path,$departement);
                 if ($req=="Success"){
                     if(move_uploaded_file($tmp_name,$img_path)){
-                        echo" ajout reuissi";
+                        $infos = " ajout reuissi";
                     }
                     else{
-                        echo "echec";
+                        $infos = "echec";
                     }
                 }
             }
         }
-    } 
+    }

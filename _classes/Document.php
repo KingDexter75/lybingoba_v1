@@ -1,7 +1,4 @@
 <?php
-
-namespace _classes;
-
 class Document
 {
     public $idDocument;

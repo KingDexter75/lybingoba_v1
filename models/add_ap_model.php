@@ -1,3 +1,3 @@
 <?php
-    include "_classes/Ap.php";
-?>
+
+include "_classes/Ap.php";

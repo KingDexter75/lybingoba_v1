@@ -1,7 +1,5 @@
 <?php
 
-namespace _classes;
-
 class Staff
 {
     public $idStaff;

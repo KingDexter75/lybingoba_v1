@@ -1,7 +1,5 @@
 <?php
 
-namespace _classes;
-
 class Ap
 {
     public $idAP;
