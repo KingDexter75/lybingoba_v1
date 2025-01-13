@@ -41,7 +41,7 @@
 
                             <img src="<?= PATH ?>assets/img/WhatsApp Image 2024-10-06 à 19.45.59_f32fda1d.jpg" alt="Profile" class="rounded-circle">
                             <h2>Admin</h2>
-                            <h3>Lybingoba</h3>
+                            <h3>LYBINGOBA</h3>
                             <div class="social-links mt-2">
                                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                             </div>
@@ -78,7 +78,7 @@
 
                                     <div class="row">
                                         <div class="col-lg-3 col-md-4 label">Website Name</div>
-                                        <div class="col-lg-9 col-md-8">Lybingoba</div>
+                                        <div class="col-lg-9 col-md-8">LYBINGOBA</div>
                                     </div>
 
                                     <div class="row">

@@ -25,7 +25,7 @@
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                   <img src="<?= PATH ?>assets/img/WhatsApp Image 2024-10-06 à 19.45.59_f32fda1d.jpg" alt="" style="width: 30px; height: 90px;">
-                  <span class="d-none d-lg-block">Admin Lybingoba</span>
+                  <span class="d-none d-lg-block">Admin LYBINGOBA/span>
                 </a>
               </div><!-- End Logo -->
 
