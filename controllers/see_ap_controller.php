@@ -1,1 +1,3 @@
 <?php
+
+$APS = Ap::getAllAp();
