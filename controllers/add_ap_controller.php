@@ -23,6 +23,15 @@
                         $infos = "echec";
                     }
                 }
+                else{
+                    $infos = "Nom de l'ap ou departement existant";
+                }
+            }else{
+                $req = "Error";
+                $infos = "Extension invalide";
             }
+        }else{
+            $req = "Error";
+            $infos = "Probleme survenue lors de l'importation de l'image";
         }
     }

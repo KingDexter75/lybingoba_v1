@@ -18,18 +18,18 @@ class Ap
     static function addAp($nomAP, $photoAP, $departementAP)
     {
         global $db;
-        $searchApExist = $db->prepare('SELECT * FROM AP WHERE nomAP=? AND departementAP=?');
+        $searchApExist = $db->prepare('SELECT * FROM AP WHERE nomAP=? OR departementAP=?');
         $searchApExist->execute([$nomAP, $departementAP]);
         $nbAp = $searchApExist->rowCount();
         if ($nbAp > 0) {
-            return "Error the AP information existing";
+            return "Error";
         } else {
             $addAp = $db->prepare('INSERT INTO AP(nomAP, photoAP, departementAP) VALUES(?, ?, ?)');
             $addAp->execute([$nomAP, $photoAP, $departementAP]);
             if ($addAp) {
                 return "Success";
             } else {
-                return "Error verify information";
+                return "Error";
             }
         }
     }
@@ -42,7 +42,7 @@ class Ap
         if ($updateAp) {
             return "Success";
         } else {
-            return "Error verify information";
+            return "Error";
         }
     }
 
@@ -54,7 +54,7 @@ class Ap
         if ($removeAp) {
             return "Success";
         } else {
-            return "Error verify information";
+            return "Error";
         }
     }
 
@@ -65,7 +65,7 @@ class Ap
         if ($getAllAp) {
             return $getAllAp->fetchAll();
         } else {
-            return "Error recovery impossible";
+            return "Error";
         }
     }
 
@@ -77,7 +77,7 @@ class Ap
         if ($getOneAp) {
             return $getOneAp->fetch();
         } else {
-            return "Error recovery impossible";
+            return "Error";
         }
     }
 }

@@ -69,19 +69,19 @@
                                 <div class="row mb-3">
                                     <label for="inputText" class="col-sm-2 col-form-label">Nom AP</label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="nom" class="form-control" id="">
+                                        <input type="text" name="nom" class="form-control" id="" required="required">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputPassword" class="col-sm-2 col-form-label">Departement AP</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" name="depart">
+                                        <input type="text" class="form-control" name="depart" required="required">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <label for="inputNumber" class="col-sm-2 col-form-label">Image AP</label>
                                     <div class="col-sm-10">
-                                        <input type="file" name="image" class="form-control" id="" accept="image/*">
+                                        <input type="file" name="image" class="form-control" id="" accept="image/*" required="required">
                                     </div>
                                 </div>
 

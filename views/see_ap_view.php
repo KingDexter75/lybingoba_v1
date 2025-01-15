@@ -38,15 +38,15 @@
         if ($req == "Success") {
             echo '
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            <strong>' . $req . '</strong>' . $infos . '
+                            <strong>' . $req . ' </strong>' . $infos . '
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     ';
         }
-        else {
+        else{
             echo '
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                            <strong>' . $req . '</strong>' . $infos . '
+                            <strong>' . $req . ' </strong>' . $infos . '
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     ';
@@ -80,7 +80,7 @@
                                     <td><?= $AP['nomAP'] ?></td>
                                     <td><?= $AP['departementAP'] ?></td>
                                     <td>
-                                        <a href="#" class="btn btn-success" title="modifier"><i class="bi bi-pen"></i></a>
+                                        <a href="<?= PATH ?>update_ap?modifier=<?= $AP['idAP'] ?>" class="btn btn-success" title="modifier"><i class="bi bi-pen"></i></a>
                                         <a href="<?= PATH ?>see_ap?delete=<?= $AP['idAP'] ?>" class="btn btn-danger" title="delete"><i class="bi bi-trash3"></i></a>
                                     </td>
                                 </tr>

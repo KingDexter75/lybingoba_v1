@@ -24,3 +24,4 @@ if ($_GET['delete']) {
         $infos = "Image de l'utilisateur introuvable";
     }
 }
+
