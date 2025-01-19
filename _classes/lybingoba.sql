@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : dim. 05 jan. 2025 à 10:38
--- Version du serveur : 8.0.31
--- Version de PHP : 8.0.26
+-- Généré le : dim. 19 jan. 2025 à 09:37
+-- Version du serveur : 8.3.0
+-- Version de PHP : 8.2.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,7 +34,15 @@ CREATE TABLE IF NOT EXISTS `ap` (
   `photoAP` varchar(200) NOT NULL,
   `departementAP` varchar(50) NOT NULL,
   PRIMARY KEY (`idAP`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `ap`
+--
+
+INSERT INTO `ap` (`idAP`, `nomAP`, `photoAP`, `departementAP`) VALUES
+(7, 'paul', 'assets/img/AP/tonton678653b0accd15.76602919.jpg', 'physique'),
+(8, 'irina', 'assets/img/AP/tata678652e761f164.51699956.jpg', 'mathematiques');
 
 -- --------------------------------------------------------
 
@@ -61,10 +69,18 @@ CREATE TABLE IF NOT EXISTS `blog` (
 DROP TABLE IF EXISTS `document`;
 CREATE TABLE IF NOT EXISTS `document` (
   `idDocument` int NOT NULL AUTO_INCREMENT,
+  `titreDocument` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `nomDocument` varchar(100) NOT NULL,
   `trimestreDocument` int NOT NULL,
   PRIMARY KEY (`idDocument`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `document`
+--
+
+INSERT INTO `document` (`idDocument`, `titreDocument`, `nomDocument`, `trimestreDocument`) VALUES
+(1, 'expose sur samba', 'assets/fichier pdf/expose sur samba678c8e81987341.67312364.docx', 1);
 
 -- --------------------------------------------------------
 
@@ -95,7 +111,14 @@ CREATE TABLE IF NOT EXISTS `staff` (
   `photoStaff` varchar(250) NOT NULL,
   `descriptionStaff` text NOT NULL,
   PRIMARY KEY (`idStaff`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `staff`
+--
+
+INSERT INTO `staff` (`idStaff`, `nomStaff`, `gradeStaff`, `photoStaff`, `descriptionStaff`) VALUES
+(1, 'kouemo dakleu', 'ingenieur', 'assets/img/team/kouemo dakleu678c98d9aa01b0.85751782.jpg', 'Jeune passionné par la tech');
 
 -- --------------------------------------------------------
 
@@ -109,7 +132,15 @@ CREATE TABLE IF NOT EXISTS `user` (
   `loginUser` varchar(50) NOT NULL,
   `passwordUser` varchar(100) NOT NULL,
   PRIMARY KEY (`idUser`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`idUser`, `loginUser`, `passwordUser`) VALUES
+(1, 'admin', '1234'),
+(2, 'admin@gmail.com', '1234');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
