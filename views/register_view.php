@@ -29,6 +29,27 @@
                 </a>
               </div><!-- End Logo -->
 
+                <?php
+                if (isset($infos)){
+                    if ($req == "Success") {
+                        echo '
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>' . $req . ' </strong>' . $infos . '
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    ';
+                    }
+                    else{
+                        echo '
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>' . $req . ' </strong>' . $infos . '
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    ';
+                    }
+                }
+                ?>
+
               <div class="card mb-3">
 
                 <div class="card-body">
@@ -44,14 +65,14 @@
                       <label for="yourUsername" class="form-label">Username</label>
                       <div class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" name="username" class="form-control" id="yourUsername" required>
+                        <input type="text" name="username" class="form-control" id="yourUsername" required="required">
                         <div class="invalid-feedback">Please choose a username.</div>
                       </div>
                     </div>
 
                     <div class="col-12">
                       <label for="yourPassword" class="form-label">Password</label>
-                      <input type="password" name="password" class="form-control" id="yourPassword" required>
+                      <input type="password" name="password" class="form-control" id="yourPassword" required="required">
                       <div class="invalid-feedback">Please enter your password!</div>
                     </div>
 
@@ -63,7 +84,7 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Create Account</button>
+                        <input type="submit" value="Valider" class="btn btn-primary w-100" name="submit">
                     </div>
                     <div class="col-12">
                       <p class="small mb-0">Already have an account? <a href="<?= PATH ?>login">Log in</a></p>

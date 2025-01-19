@@ -29,6 +29,27 @@
                 </a>
               </div><!-- End Logo -->
 
+                <?php
+                if (isset($infos)){
+                    if ($req == "Success") {
+                        echo '
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>' . $req . ' </strong>' . $infos . '
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    ';
+                    }
+                    else{
+                        echo '
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>' . $req . ' </strong>' . $infos . '
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    ';
+                    }
+                }
+                ?>
+
               <div class="card mb-3">
 
                 <div class="card-body">
@@ -56,7 +77,7 @@
                     </div>
 
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Login</button>
+                        <input type="submit" value="Login" class="btn btn-primary w-100" name="submit">
                     </div>
                     <div class="col-12">
                       <p class="small mb-0">Don't have account? <a href="<?= PATH ?>register">Create an account</a></p>

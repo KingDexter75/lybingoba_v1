@@ -15,18 +15,18 @@ class User
     static function addUser($loginUser, $passwordUser)
     {
         global $db;
-        $searchUserExist = $db->prepare('SELECT * FROM user WHERE loginUser=? AND passwordUser=?');
-        $searchUserExist->execute([$loginUser, $passwordUser]);
+        $searchUserExist = $db->prepare('SELECT * FROM user WHERE loginUser=?');
+        $searchUserExist->execute([$loginUser]);
         $nbUser = $searchUserExist->rowCount();
         if ($nbUser > 0) {
-            return "Error the user information existing";
+            return "Error";
         } else {
             $addUser = $db->prepare('INSERT INTO user(loginUser, passwordUser) VALUES(?, ?)');
             $addUser->execute([$loginUser, $passwordUser]);
             if ($addUser) {
                 return "Success";
             } else {
-                return "Error verify information";
+                return "Error";
             }
         }
     }
@@ -55,10 +55,10 @@ class User
         }
     }
 
-    static function getAllUser()
+    static function getAllUser($idUser)
     {
         global $db;
-        $getAllUser = $db->query('SELECT * FROM user');
+        $getAllUser = $db->query('SELECT * FROM user WHERE idUser <> "$idUser"');
         if ($getAllUser) {
             return $getAllUser->fetchAll();
         } else {
@@ -71,6 +71,30 @@ class User
         global $db;
         $getOneUser = $db->prepare('SELECT * FROM user WHERE idUser=?');
         $getOneUser->execute([$idUser]);
+        if ($getOneUser) {
+            return $getOneUser->fetch();
+        } else {
+            return "Error recovery impossible";
+        }
+    }
+
+    static function connexionUser($loginUser, $passwordUser)
+    {
+        global $db;
+        $req = $db->query("SELECT * FROM user WHERE loginUser = '$loginUser' AND passwordUser = '$passwordUser'");
+        $rep = $req->fetch();
+        if ($rep['idUser']) {
+            return "Success";
+        } else {
+            return "Error";
+        }
+    }
+
+    static function getUserByUsername($loginUser)
+    {
+        global $db;
+        $getOneUser = $db->prepare('SELECT * FROM user WHERE loginUser=?');
+        $getOneUser->execute([$loginUser]);
         if ($getOneUser) {
             return $getOneUser->fetch();
         } else {
