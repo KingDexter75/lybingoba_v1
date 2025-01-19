@@ -33,6 +33,27 @@
             </nav>
         </div><!-- End Page Title -->
 
+        <?php
+        if (isset($infos)){
+            if ($req == "Success") {
+                echo '
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>' . $req . ' </strong>' . $infos . '
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    ';
+            }
+            else{
+                echo '
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>' . $req . ' </strong>' . $infos . '
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    ';
+            }
+        }
+        ?>
+
         <section class="section">
             <div class="row">
 
@@ -43,17 +64,18 @@
                             <h5 class="card-title">Ajouter un nouveau Document</h5>
 
                             <!-- General Form Elements -->
-                            <form method="POST">
-                                <!-- <div class="row mb-3">
-                                    <label for="inputText" class="col-sm-2 col-form-label">Nom Document</label>
+                            <form method="POST" enctype="multipart/form-data">
+                                <div class="row mb-3">
+                                    <label for="inputText" class="col-sm-2 col-form-label">Nom document</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" name="nom" required="required">
                                     </div>
-                                </div> -->
+                                </div>
+
                                 <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label">Trimestre du document</label>
                                     <div class="col-sm-10">
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select class="form-select" name="trimestre" id="trimestre" aria-label="Default select example">
                                             <option selected>Choisir le trimestre auquel le document est rattacher</option>
                                             <option value="1">Premier Trimestre</option>
                                             <option value="2">Deuxieme Trimestre</option>
@@ -64,7 +86,7 @@
                                 <div class="row mb-3">
                                     <label for="inputNumber" class="col-sm-2 col-form-label">Choisir le Document</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="file" id="formFile" accept=".pdf,.doc,.docx">
+                                        <input class="form-control" name="file" type="file" id="formFile" accept=".pdf,.doc,.docx">
                                     </div>
                                 </div>
 
