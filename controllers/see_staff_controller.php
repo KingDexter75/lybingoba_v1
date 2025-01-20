@@ -18,7 +18,7 @@ if ($_GET['delete']) {
         else{
             $infos = "Echec de la suppression";
         }
-        header("Location:".PATH."see_staff");
+        header("Location:".PATH."see_staff?req=$req&infos=$infos");
     }
     else{
         $infos = "Image de l'utilisateur introuvable";

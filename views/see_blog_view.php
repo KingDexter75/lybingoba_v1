@@ -23,12 +23,12 @@
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>See user</h1>
+        <h1>See Blog</h1>
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?= PATH ?>dashboard">Home</a></li>
-                <li class="breadcrumb-item">user</li>
-                <li class="breadcrumb-item active">See user</li>
+                <li class="breadcrumb-item">blog</li>
+                <li class="breadcrumb-item active">See blog</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
@@ -62,26 +62,28 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Administrateur du site</h5>
-                        <p>Information sur les administrateur du site</p>
+                        <h5 class="card-title">Blog du lycee</h5>
+                        <p>Information sur le blog du lycee</p>
 
                         <!-- Table with stripped rows -->
                         <table class="table datatable">
                             <thead>
                             <tr>
-                                <th>id</th>
-                                <th>Username</th>
+                                <th>Image</th>
+                                <th>titre</th>
+                                <th>date ajout</th>
                                 <th>Operations</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <?php foreach ($users as $user): ?>
+                            <?php foreach ($blogs as $blog): ?>
                                 <tr>
-                                    <td><?= $user['idUser'] ?></td>
-                                    <td><?= $user['loginUser'] ?></td>
+                                    <td><img src="<?= PATH ?><?= $blog['photoBlog'] ?>" alt="Profile" class="rounded-circle" style="width: 50px; height: 50px;"></td>
+                                    <td><?= $blog['titreBlog'] ?></td>
+                                    <td><?= $blog['dateBlog'] ?></td>
                                     <td>
-                                        <a href="<?= PATH ?>update_user?modifier=<?= $user['idUser'] ?>" class="btn btn-success" title="modifier"><i class="bi bi-pen"></i></a>
-                                        <a href="<?= PATH ?>see_user?delete=<?= $user['idUser'] ?>" class="btn btn-danger" title="delete"><i class="bi bi-trash3"></i></a>
+                                        <a href="<?= PATH ?>update_blog?modifier=<?= $blog['idBlog'] ?>" class="btn btn-success" title="modifier"><i class="bi bi-pen"></i></a>
+                                        <a href="<?= PATH ?>see_blog?delete=<?= $blog['idBlog'] ?>" class="btn btn-danger" title="delete"><i class="bi bi-trash3"></i></a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

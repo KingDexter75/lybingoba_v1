@@ -23,7 +23,7 @@ class Blog
         $searchBlogExist->execute([$dateBlog, $titreBlog]);
         $nbBlog = $searchBlogExist->rowCount();
         if ($nbBlog > 0) {
-            return "Error the Blog information existing";
+            return "Error";
         } else {
             $addBlog = $db->prepare('INSERT INTO blog(photoBlog, contenuBlog, dateBlog, titreBlog) VALUES(?, ?, ?, ?)');
             $addBlog->execute([$photoBlog, $contenuBlog, $dateBlog, $titreBlog]);

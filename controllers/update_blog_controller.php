@@ -3,11 +3,12 @@
 global $db;
 $id = $_GET['modifier'];
 //    Recuperons les informations sur l'image qu'on desire modifier
-$infos_ap = Ap::getOneAp($id);
+$infos_blog = Blog::getOneBlog($id);
 
 if ($_POST['update']){
-    $nom = $_POST['nom'];
-    $departement = $_POST['depart'];
+    $titre = $_POST['titre'];
+    $date = $_POST['date'];
+    $contenu = $_POST['contenu'];
 
     $img_name = $_FILES['image']['name'];
     $tmp_name = $_FILES['image']['tmp_name'];
@@ -19,13 +20,13 @@ if ($_POST['update']){
             $ext = strtolower($extension);
             $accept_ext = array('jpg','jpeg','png');
             if (in_array($ext, $accept_ext)){
-                $new_name = uniqid($nom,true).'.'.$ext;
-                $img_path = "assets/img/AP/".$new_name;
+                $new_name = uniqid($titre,true).'.'.$ext;
+                $img_path = "assets/img/blog/".$new_name;
 
-                $path_image_db = $infos_ap['photoAP'];
+                $path_image_db = $infos_blog['photoBlog'];
                 if (file_exists($path_image_db)){
                     unlink($path_image_db);
-                    $req = Ap::updateAp($id, $nom, $img_path, $departement);
+                    $req = Blog::updateBlog($id,$img_path,$contenu,$date,$titre);
                     if ($req) {
                         if (move_uploaded_file($tmp_name, $img_path)){
                             $req = "Success";
@@ -35,7 +36,7 @@ if ($_POST['update']){
                             $req = "Error";
                             $infos =  "Echec de la mise a jour";
                         }
-                        header("Location:".PATH."update_document?req=$req&infos=$infos");
+                        header("Location:".PATH."see_blog?req=$req&infos=$infos");
                     }
                 }
 
@@ -46,8 +47,8 @@ if ($_POST['update']){
             $infos = "unknown error occurred!";
         }
     }else{
-        $req = $db->prepare("UPDATE AP SET nomAP = ?,departementAP = ? WHERE idAP = ?");
-        $req = $req->execute([$nom,$departement,$id]);
+        $req = $db->prepare("UPDATE blog SET contenuBlog = ?, dateBlog = ?, titreBlog = ? WHERE idBlog = ?");
+        $req = $req->execute([$contenu,$date,$titre,$id]);
         if ($req) {
             $req = "Success";
             $infos = "Update successfully";
@@ -55,6 +56,6 @@ if ($_POST['update']){
             $req = "Error";
             $infos = "Update failed";
         }
-        header("Location:".PATH."update_document?req=$req&infos=$infos");
+        header("Location:".PATH."see_blog?req=$req&infos=$infos");
     }
 }

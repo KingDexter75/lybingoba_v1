@@ -484,23 +484,24 @@
           </script>
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/les censeurs/proviseur2.jpg" class="testimonial-img" alt="">
-                <h3>ETA James Njock</h3>
-                <h4> proviseurs </h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>PLEG-H-E, Officier des palmes Academiques, Chevailier du Merite Camerounais</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
+            <?php foreach ($staffs as $staff): ?>
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="<?= PATH ?><?= $staff['photoStaff'] ?>" class="testimonial-img" alt="">
+                        <h3><?= $staff['nomStaff'] ?></h3>
+                        <h4><?= $staff['gradeStaff'] ?></h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span><?= $staff['descriptionStaff'] ?></span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div><!-- End testimonial item -->
+            <?php endforeach; ?>
 
-            
 
           </div>
           <div class="swiper-pagination"></div>

@@ -34,7 +34,9 @@
     </div><!-- End Page Title -->
 
     <?php
-    if (isset($infos)){
+    if ($_GET['req'] && $_GET['infos']){
+        $req = $_GET['req'];
+        $infos = $_GET['infos'];
         if ($req == "Success") {
             echo '
                         <div class="alert alert-success alert-dismissible fade show" role="alert">

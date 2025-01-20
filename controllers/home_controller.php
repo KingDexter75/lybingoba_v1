@@ -1,0 +1,3 @@
+<?php
+
+$staffs = Staff::getAllStaff();

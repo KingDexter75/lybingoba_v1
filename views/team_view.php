@@ -44,12 +44,11 @@
 
         <div class="row gy-4">
 
-            <?php foreach ($APS as $AP): ?>
+            <?php foreach ($APS as $AP) ?>
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                     <div class="team-member">
                         <div class="member-img">
                             <img src="<?= PATH ?><?= $AP['photoAP'] ?>" class="img-fluid" alt="">
-
                         </div>
                         <div class="member-info">
                             <h4><?= $AP['nomAP'] ?></h4>

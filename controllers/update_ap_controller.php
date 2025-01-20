@@ -35,7 +35,7 @@ if ($_POST['update']){
                             $req = "Error";
                             $infos =  "Echec de la mise a jour";
                         }
-                        header("Location:".PATH."update_ap?modifier={$id}");
+                        header("Location:".PATH."see_ap?req=$req&infos=$infos");
                     }
                 }
 
@@ -55,6 +55,6 @@ if ($_POST['update']){
             $req = "Error";
             $infos = "Update failed";
         }
-        header("Location:".PATH."update_ap?modifier={$id}");
+        header("Location:".PATH."see_ap?req=$req&infos=$infos");
     }
 }

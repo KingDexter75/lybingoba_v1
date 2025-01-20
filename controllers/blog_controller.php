@@ -1,2 +1,3 @@
 <?php
-// $APS = Ap::getAllAp();
+
+$blogs = Blog::getAllBlog();
