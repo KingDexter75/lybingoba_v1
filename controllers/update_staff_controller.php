@@ -11,11 +11,12 @@ $admin = User::getUserByUsername($user);
 global $db;
 $id = $_GET['modifier'];
 //    Recuperons les informations sur l'image qu'on desire modifier
-$infos_ap = Ap::getOneAp($id);
+$infos_staff = Staff::getOneStaff($id);
 
 if ($_POST['update']){
-    $nom = $_POST['nom'];
-    $departement = $_POST['depart'];
+    $nom= $_POST["nom"];
+    $grade= $_POST["grade"];
+    $description = $_POST['description'];
 
     $img_name = $_FILES['image']['name'];
     $tmp_name = $_FILES['image']['tmp_name'];
@@ -28,23 +29,32 @@ if ($_POST['update']){
             $accept_ext = array('jpg','jpeg','png');
             if (in_array($ext, $accept_ext)){
                 $new_name = uniqid($nom,true).'.'.$ext;
-                $img_path = "assets/img/AP/".$new_name;
+                $img_path = "assets/img/team/".$new_name;
 
-                $path_image_db = $infos_ap['photoAP'];
+                $path_image_db = $infos_staff['photoStaff'];
                 if (file_exists($path_image_db)){
                     unlink($path_image_db);
-                    $req = Ap::updateAp($id, $nom, $img_path, $departement);
+                    $req = Staff::updateStaff($id,$nom,$grade,$img_path,$description);
                     if ($req) {
                         if (move_uploaded_file($tmp_name, $img_path)){
-                            $req = "Success";
+                        $req = "Success";
                             $infos =  "Mise a jour effectuer avec success";
                         }
                         else{
-                            $req = "Error";
+                        $req = "Error";
                             $infos =  "Echec de la mise a jour";
                         }
-                        header("Location:".PATH."update_document?req=$req&infos=$infos");
+                        header("Location:".PATH."see_staff?req=$req&infos=$infos");
                     }
+                    else{
+                        $infos =  "Mise a jour impossible";
+                        header("Location:".PATH."see_staff?req=$req&infos=$infos");
+                    }
+                }
+                else{
+                    $req = "Error";
+                    $infos =  "Image introuvable impossible d'effectuer la mise a jour";
+                    header("Location:".PATH."see_staff?req=$req&infos=$infos");
                 }
 
             }else {
@@ -54,8 +64,8 @@ if ($_POST['update']){
             $infos = "unknown error occurred!";
         }
     }else{
-        $req = $db->prepare("UPDATE AP SET nomAP = ?,departementAP = ? WHERE idAP = ?");
-        $req = $req->execute([$nom,$departement,$id]);
+        $req = $db->prepare("UPDATE staff SET nomStaff = ?, gradeStaff = ?, descriptionStaff = ? WHERE idStaff = ?");
+        $req = $req->execute([$nom,$grade,$description,$id]);
         if ($req) {
             $req = "Success";
             $infos = "Update successfully";
@@ -63,6 +73,6 @@ if ($_POST['update']){
             $req = "Error";
             $infos = "Update failed";
         }
-        header("Location:".PATH."update_document?req=$req&infos=$infos");
+        header("Location:".PATH."see_staff?req=$req&infos=$infos");
     }
 }

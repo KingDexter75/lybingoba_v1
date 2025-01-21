@@ -32,6 +32,29 @@
             </nav>
         </div><!-- End Page Title -->
 
+        <?php
+        if ($_GET['req'] && $_GET['infos']){
+            $req = $_GET['req'];
+            $infos = $_GET['infos'];
+            if ($req == "Success") {
+                echo '
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>' . $req . ' </strong>' . $infos . '
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    ';
+            }
+            else{
+                echo '
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>' . $req . ' </strong>' . $infos . '
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    ';
+            }
+        }
+        ?>
+
         <section class="section profile">
             <div class="row">
                 <div class="col-xl-4">
@@ -40,7 +63,7 @@
                         <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
 
                             <img src="<?= PATH ?>assets/img/WhatsApp Image 2024-10-06 à 19.45.59_f32fda1d.jpg" alt="Profile" class="rounded-circle">
-                            <h2>Admin</h2>
+                            <h2><?= $admin['loginUser'] ?></h2>
                             <h3>LYBINGOBA</h3>
                             <div class="social-links mt-2">
                                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -82,8 +105,8 @@
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-lg-3 col-md-4 label ">Full Name</div>
-                                        <div class="col-lg-9 col-md-8">Admin</div>
+                                        <div class="col-lg-3 col-md-4 label ">Username</div>
+                                        <div class="col-lg-9 col-md-8"><?= $admin['loginUser'] ?></div>
                                     </div>
 
                                 </div>
@@ -94,14 +117,14 @@
                                     <form method="POST">
 
                                         <div class="row mb-3">
-                                            <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Full Name</label>
+                                            <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Username</label>
                                             <div class="col-md-8 col-lg-9">
-                                                <input name="fullName" type="text" class="form-control" id="fullName" value="Admin">
+                                                <input name="username" type="text" class="form-control" id="fullName" value="<?= $admin['loginUser'] ?>">
                                             </div>
                                         </div>
 
                                         <div class="text-center">
-                                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                                            <input type="submit" value="Save Changes" class="btn btn-primary" name="savename">
                                         </div>
                                     </form><!-- End Profile Edit Form -->
 
@@ -112,21 +135,21 @@
                                     <form method="POST">
 
                                         <div class="row mb-3">
-                                            <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Current Password</label>
+                                            <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Mot de passe actuel</label>
                                             <div class="col-md-8 col-lg-9">
-                                                <input name="password" type="password" class="form-control" id="currentPassword">
+                                                <input name="password" type="password" class="form-control" id="currentPassword" value="<?= $admin['passwordUser'] ?>">
                                             </div>
                                         </div>
 
                                         <div class="row mb-3">
-                                            <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New Password</label>
+                                            <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">Noubeau mot de passe</label>
                                             <div class="col-md-8 col-lg-9">
                                                 <input name="newpassword" type="password" class="form-control" id="newPassword">
                                             </div>
                                         </div>
 
                                         <div class="text-center">
-                                            <button type="submit" class="btn btn-primary">Change Password</button>
+                                            <input type="submit" value="Change password" class="btn btn-primary" name="changepassword">
                                         </div>
                                     </form><!-- End Change Password Form -->
 

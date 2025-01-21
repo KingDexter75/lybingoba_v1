@@ -66,7 +66,7 @@
                         <p>Information sur les animateurs pedagogiques</p>
 
                         <!-- Table with stripped rows -->
-                        <table class="table datatable">
+                        <table class="table">
                             <thead>
                             <tr>
                                 <th>Image</th>

@@ -6,7 +6,7 @@ if (isset($_POST['submit'])){
 
     $req = User::connexionUser($username, $password);
     if ($req == "Success"){
-        $_SESSION['user'] = $username ;
+        $_SESSION['user'] = $username;
         header('Location: ' . PATH . 'dashboard');
     }
     else{

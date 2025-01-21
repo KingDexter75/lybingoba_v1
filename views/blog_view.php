@@ -49,7 +49,7 @@
                             <p class="post-category">Lybingoba</p>
 
                             <h2 class="title">
-                                <a href="blog-details.html"><?= $blog['titreBlog'] ?></a>
+                                <a href="<?= PATH ?>blog_detail?id=<?= $blog['idBlog'] ?>"><?= $blog['titreBlog'] ?></a>
                             </h2>
 
                             <div class="d-flex align-items-center">

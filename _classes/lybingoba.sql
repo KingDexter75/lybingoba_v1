@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : dim. 19 jan. 2025 à 09:37
+-- Généré le : mar. 21 jan. 2025 à 13:33
 -- Version du serveur : 8.3.0
 -- Version de PHP : 8.2.18
 
@@ -34,15 +34,7 @@ CREATE TABLE IF NOT EXISTS `ap` (
   `photoAP` varchar(200) NOT NULL,
   `departementAP` varchar(50) NOT NULL,
   PRIMARY KEY (`idAP`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Déchargement des données de la table `ap`
---
-
-INSERT INTO `ap` (`idAP`, `nomAP`, `photoAP`, `departementAP`) VALUES
-(7, 'paul', 'assets/img/AP/tonton678653b0accd15.76602919.jpg', 'physique'),
-(8, 'irina', 'assets/img/AP/tata678652e761f164.51699956.jpg', 'mathematiques');
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -73,14 +65,7 @@ CREATE TABLE IF NOT EXISTS `document` (
   `nomDocument` varchar(100) NOT NULL,
   `trimestreDocument` int NOT NULL,
   PRIMARY KEY (`idDocument`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Déchargement des données de la table `document`
---
-
-INSERT INTO `document` (`idDocument`, `titreDocument`, `nomDocument`, `trimestreDocument`) VALUES
-(1, 'expose sur samba', 'assets/fichier pdf/expose sur samba678c8e81987341.67312364.docx', 1);
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -111,14 +96,7 @@ CREATE TABLE IF NOT EXISTS `staff` (
   `photoStaff` varchar(250) NOT NULL,
   `descriptionStaff` text NOT NULL,
   PRIMARY KEY (`idStaff`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Déchargement des données de la table `staff`
---
-
-INSERT INTO `staff` (`idStaff`, `nomStaff`, `gradeStaff`, `photoStaff`, `descriptionStaff`) VALUES
-(1, 'kouemo dakleu', 'ingenieur', 'assets/img/team/kouemo dakleu678c98d9aa01b0.85751782.jpg', 'Jeune passionné par la tech');
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -132,15 +110,14 @@ CREATE TABLE IF NOT EXISTS `user` (
   `loginUser` varchar(50) NOT NULL,
   `passwordUser` varchar(100) NOT NULL,
   PRIMARY KEY (`idUser`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `user`
 --
 
 INSERT INTO `user` (`idUser`, `loginUser`, `passwordUser`) VALUES
-(1, 'admin', '1234'),
-(2, 'admin@gmail.com', '1234');
+(1, 'administrateur', 'administrateur12345');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

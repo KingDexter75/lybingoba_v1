@@ -66,7 +66,7 @@
                         <p>Information sur les documents trimestriels</p>
 
                         <!-- Table with stripped rows -->
-                        <table class="table datatable">
+                        <table class="table">
                             <thead>
                             <tr>
                                 <th>Nom Document</th>

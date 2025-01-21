@@ -1,2 +1,0 @@
-<?php
-$Examens =Examen::getALLExamen();

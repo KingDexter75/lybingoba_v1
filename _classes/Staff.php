@@ -39,7 +39,7 @@ class Staff
     static function updateStaff($idStaff, $nomStaff, $gradeStaff, $photoStaff, $descriptionStaff)
     {
         global $db;
-        $updateStaff = $db->prepare('UPDATE staff SET nomStaff=?, gradeStaff=? photoStaff=?, descriptionStaff=? WHERE idStaff=?');
+        $updateStaff = $db->prepare('UPDATE staff SET nomStaff = ?, gradeStaff = ?, photoStaff=?, descriptionStaff = ? WHERE idStaff = ?');
         $updateStaff->execute([$nomStaff, $gradeStaff, $photoStaff, $descriptionStaff, $idStaff]);
         if ($updateStaff) {
             return "Success";

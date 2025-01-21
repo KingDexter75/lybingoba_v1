@@ -79,9 +79,6 @@
                     <div class="col-12">
                         <input type="submit" value="Login" class="btn btn-primary w-100" name="submit">
                     </div>
-                    <div class="col-12">
-                      <p class="small mb-0">Don't have account? <a href="<?= PATH ?>register">Create an account</a></p>
-                    </div>
                   </form>
 
                 </div>

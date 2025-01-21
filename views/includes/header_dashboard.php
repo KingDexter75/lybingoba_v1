@@ -1,8 +1,18 @@
+<?php
+session_start();
+if(!isset($_SESSION['user'])){
+    // si l'utilisateur n'est pas connecté
+    // redirection vers la page de connexion
+    header("Location:".PATH."home");
+}
+
+$user = $_SESSION['user'];
+$admin = User::getUserByUsername($user);
+?>
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+      <a href="#" class="logo d-flex align-items-center">
         <span class="d-none d-lg-block">Admin lybingoba</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -22,12 +32,12 @@
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="<?= PATH ?>assets/img/WhatsApp Image 2024-10-06 à 19.45.59_f32fda1d.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
+            <span class="d-none d-md-block dropdown-toggle ps-2"><?= $admin['loginUser'] ?></span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6>Admin</h6>
+              <h6><?= $admin['loginUser'] ?></h6>
               <span>Lybingoba</span>
             </li>
             <li>
