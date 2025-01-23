@@ -354,14 +354,9 @@
               </a>
               <p>
                 <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>BEPC 98% </span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>probatoire A4 :</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Probatoire C  90%</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Baccalauréat A4 90%</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Baccalauréat C 90%</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Baccalauréat D 90%</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>DCI 90%</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>DCI 90%</span></li>
+                  <?php foreach ($examens as $examen): ?>
+                    <li><i class="bi bi-check2-all"></i> <span><?= $examen['typeExamen'] ?>: <?= $examen['pourcentage'] ?>%</span></li>
+                  <?php endforeach; ?>
                 </ul>
               </p>
             </div>

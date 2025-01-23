@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 21 jan. 2025 à 13:33
+-- Généré le : jeu. 23 jan. 2025 à 06:01
 -- Version du serveur : 8.3.0
 -- Version de PHP : 8.2.18
 
@@ -77,8 +77,12 @@ DROP TABLE IF EXISTS `examen`;
 CREATE TABLE IF NOT EXISTS `examen` (
   `idExamen` int NOT NULL AUTO_INCREMENT,
   `typeExamen` varchar(100) NOT NULL,
+  `sessionExamen` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `fichierExamen` varchar(200) NOT NULL,
-  `descriptionExamen` text NOT NULL,
+  `pourcentage` varchar(20) NOT NULL,
+  `nombrePresentes` int NOT NULL,
+  `nombreAdmis` int NOT NULL,
+  `nombreEchoue` int NOT NULL,
   PRIMARY KEY (`idExamen`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 

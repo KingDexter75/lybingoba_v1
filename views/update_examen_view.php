@@ -23,12 +23,12 @@
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>ADD Examen</h1>
+            <h1>Update Examen</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?= PATH ?>dashboard">Home</a></li>
                     <li class="breadcrumb-item">Examen</li>
-                    <li class="breadcrumb-item active">ADD Examen</li>
+                    <li class="breadcrumb-item active">Update Examen</li>
                 </ol>
             </nav>
         </div><!-- End Page Title -->
@@ -60,31 +60,14 @@
 
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Ajouter un nouveau Examen</h5>
+                            <h5 class="card-title">Modifier les informations sur l'examen</h5>
 
                             <!-- Multi Columns Form -->
                             <form class="row g-3" method="POST" enctype="multipart/form-data">
-                                <div class="col-md-12">
-                                    <label for="inputName5" class="form-label">Examen</label>
-                                    <select name="examen" id="section" class="form-select" aria-label="Default select example">
-                                        <option selected>Choisir l'examen</option>
-                                        <option value="BEPC ESP">BEPC Espagnol</option>
-                                        <option value="BEPC ALL">BEPC Allemand</option>
-                                        <option value="GCE ORDINARY">GCE Ordinary Level</option>
-                                        <option value="PROBATOIRE ESP">Probatoire A4 Espagnol</option>
-                                        <option value="PROBATOIRE ALL">Probatoire A4 Allemand</option>
-                                        <option value="PROBATOIRE D">Probatoire D</option>
-                                        <option value="PROBATOIRE C">Probatoire C</option>
-                                        <option value="BACC ESP">Baccalaureat A4 Espagnol</option>
-                                        <option value="BACC ALL">Baccalaureat A4 Allemand</option>
-                                        <option value="BACC D">Baccalaureat D</option>
-                                        <option value="BACC C">Baccalaureat C</option>
-                                        <option value="GCE Hight">GCE Hight Level</option>
-                                    </select>
-                                </div>
+                            
                                 <div class="col-md-6">
                                     <label for="inputName5" class="form-label">Session</label>
-                                    <input type="month" class="form-control" name="session">
+                                    <input type="month" class="form-control" name="session" value="<?= $infos_examen['sessionExamen'] ?>">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputEmail5" class="form-label">Fichier des admis</label>
@@ -92,22 +75,22 @@
                                 </div>
                                 <div class="col-md-4">
                                     <label for="inputCity" class="form-label">Nombres presentes</label>
-                                    <input type="number" class="form-control" name="nbPres">
+                                    <input type="number" class="form-control" name="nbPres" value="<?= $infos_examen['nombrePresentes'] ?>">
                                 </div>
                                 <div class="col-md-4">
                                     <label for="inputState" class="form-label">Nombres Admis</label>
-                                    <input type="number" class="form-control" name="nbAdmis">
+                                    <input type="number" class="form-control" name="nbAdmis" value="<?= $infos_examen['nombreAdmis'] ?>">
                                 </div>
                                 <div class="col-md-4">
                                     <label for="inputZip" class="form-label">Nombres Echoues</label>
-                                    <input type="number" class="form-control" name="nbEchoue">
+                                    <input type="number" class="form-control" name="nbEchoue" value="<?= $infos_examen['nombreEchoue'] ?>">
                                 </div>
                                 <div class="col-12">
                                     <label for="inputZip" class="form-label">Pourcentage de reussite</label>
-                                    <input type="text" class="form-control" name="pourcentage">
+                                    <input type="text" class="form-control" name="pourcentage" value="<?= $infos_examen['pourcentage'] ?>">
                                 </div>
                                 <div class="text-center">
-                                    <input type="submit" name="submit" value="Enregistrer" class="btn btn-primary">
+                                    <input type="submit" name="update" value="Mettre a jour" class="btn btn-primary">
                                 </div>
                             </form><!-- End Multi Columns Form -->
 

@@ -5,44 +5,52 @@ class Examen
     public $idExamen;
     public $typeExamen;
     public $fichierExamen;
-    public $descriptionExamen;
+    public $pourcentage;
+    public $nombrePresentes;
+    public $nombreAdmis;
+    public $nombreEchoue;
+    public $sessionExamen;
 
-    function __construct($idExamen, $typeExamen, $fichierExamen, $descriptionExamen)
+    function __construct($idExamen, $typeExamen, $sessionExamen, $fichierExamen, $pourcentage, $nombrePresentes, $nombreAdmis, $nombreEchoue)
     {
         $this->idExamen = $idExamen;
         $this->typeExamen = $typeExamen;
+        $this->sessionExamen = $sessionExamen;
         $this->fichierExamen = $fichierExamen;
-        $this->descriptionExamen = $descriptionExamen;
+        $this->pourcentage = $pourcentage;
+        $this->nombrePresentes = $nombrePresentes;
+        $this->nombreAdmis = $nombreAdmis;
+        $this->nombreEchoue = $nombreEchoue;
     }
 
-    static function addExamen($typeExamen, $fichierExamen, $descriptionExamen)
+    static function addExamen($typeExamen, $sessionExamen, $fichierExamen, $pourcentage, $nombrePresentes, $nombreAdmis, $nombreEchoue)
     {
         global $db;
-        $searchexamenExist = $db->prepare('SELECT * FROM examen WHERE typeExamen=?');
-        $searchexamenExist->execute([$typeExamen]);
+        $searchexamenExist = $db->prepare('SELECT * FROM examen WHERE typeExamen=? AND sessionExamen=?');
+        $searchexamenExist->execute([$typeExamen,$sessionExamen]);
         $nbExamen = $searchexamenExist->rowCount();
         if ($nbExamen > 0) {
-            return "Error the examen information existing";
+            return "The examen information existing";
         } else {
-            $addExamen = $db->prepare('INSERT INTO examen(typeExamen, fichierExamen, descriptionExamen) VALUES(?, ?, ?)');
-            $addExamen->execute([$typeExamen, $fichierExamen, $descriptionExamen]);
+            $addExamen = $db->prepare('INSERT INTO examen(typeExamen, sessionExamen, fichierExamen, pourcentage, nombrePresentes, nombreAdmis, nombreEchoue) VALUES(?, ?, ?, ?, ?, ?, ?)');
+            $addExamen->execute([$typeExamen, $sessionExamen, $fichierExamen, $pourcentage, $nombrePresentes, $nombreAdmis, $nombreEchoue]);
             if ($addExamen) {
                 return "Success";
             } else {
-                return "Error verify information";
+                return "Error";
             }
         }
     }
 
-    static function updateExamen($idExamen, $typeExamen, $fichierExamen, $descriptionExamen)
+    static function updateExamen($idExamen, $typeExamen, $sessionExamen, $fichierExamen, $pourcentage, $nombrePresentes, $nombreAdmis, $nombreEchoue)
     {
         global $db;
-        $updateExamen = $db->prepare('UPDATE examen SET typeExamen=?, fichierExamen=?, descriptionExamen=? WHERE idExamen=?');
-        $updateExamen->execute([$typeExamen, $fichierExamen, $descriptionExamen, $idExamen]);
+        $updateExamen = $db->prepare('UPDATE examen SET typeExamen=?, sessionExamen=?, fichierExamen=?, pourcentage=?, nombrePresentes=?, nombreAdmis=?, nombreEchoue=? WHERE idExamen=?');
+        $updateExamen->execute([$typeExamen, $sessionExamen, $fichierExamen, $pourcentage, $nombrePresentes, $nombreAdmis, $nombreEchoue, $idExamen]);
         if ($updateExamen) {
             return "Success";
         } else {
-            return "Error verify information";
+            return "Error";
         }
     }
 
@@ -54,7 +62,7 @@ class Examen
         if ($removeExamen) {
             return "Success";
         } else {
-            return "Error verify information";
+            return "Error";
         }
     }
 

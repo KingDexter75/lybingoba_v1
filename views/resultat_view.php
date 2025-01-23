@@ -42,28 +42,11 @@
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
 
                         <div class="service-box">
-                            <h4>les differents Examens </h4>
+                            <h4>Telecharger la liste des Resultats</h4>
                             <div class="services-list">
-                                <a href="#" class="active"><i class="bi bi-arrow-right-circle"></i><span>CONCOURS D'ENTREE EN 6e</span></a>
-                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>INTERVIEW</span></a>
-                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>BEPC</span></a>
-                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Probatoire</span></a>
-                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>baccalauréat </span></a>
-                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>dci Olever </span></a>
-                                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>baccalauréat </span></a>
-                            </div>
-                        </div><!-- End Services List -->
-
-                        <div class="service-box">
-                            <h4>Download Catalog</h4>
-                            <div class="download-catalog">
-                                <a href="#"><i class="bi bi-filetype-pdf"></i><span>liste des Resultats CONCOURS </span></a>
-                                <a href="#"><i class="bi bi-filetype-pdf"></i><span>liste des classes</span></a>
-                                <a href="#"><i class="bi bi-file-earmark-word"></i><span>liste......</span></a>
-                                <a href="#"><i class="bi bi-filetype-pdf"></i><span>liste des insolvables</span></a>
-                                <a href="#"><i class="bi bi-filetype-pdf"></i><span>liste des classes</span></a>
-                                <a href="#"><i class="bi bi-file-earmark-word"></i><span>liste......</span></a>
-                                <a href="#"><i class="bi bi-file-earmark-word"></i><span>liste......</span></a>
+                                <?php foreach ($examens as $examen): ?>
+                                    <a href="<?= PATH ?><?= $examen['fichierExamen'] ?>"><i class="bi bi-arrow-right-circle"></i><span><?= $examen['typeExamen'] ?></span></a>
+                                <?php endforeach; ?>
                             </div>
                         </div><!-- End Services List -->
 
@@ -71,7 +54,7 @@
                             <i class="bi bi-headset help-icon"></i>
                             <h4>Question?</h4>
                             <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>237 656 47 66 05</span></p>
-                            <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="donaldleugoue@gmail.com">donaldleugoue@gmail.com</a></p>
+                            <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="<?= PATH ?>#contact">Contacter Nous</a></p>
                         </div>
 
                     </div>

@@ -42,6 +42,6 @@ if ($_POST["submit"]){
         }
     }else{
         $req = "Error";
-        $infos = "Probleme survenue lors de l'importation du fichier";
+        $infos = "Taille du fichier trop grande changer de fichier ou reduire la taille";
     }
 }

@@ -1,0 +1,3 @@
+<?php
+
+$examens = Examen::getAllExamen();

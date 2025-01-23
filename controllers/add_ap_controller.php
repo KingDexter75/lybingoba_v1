@@ -41,6 +41,6 @@ $admin = User::getUserByUsername($user);
             }
         }else{
             $req = "Error";
-            $infos = "Probleme survenue lors de l'importation de l'image";
+            $infos = "Taille de l'image trop grande changer d'image ou reduire la taille";
         }
     }

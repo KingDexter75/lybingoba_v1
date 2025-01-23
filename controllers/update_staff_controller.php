@@ -1,9 +1,9 @@
 <?php
 session_start();
-if(!isset($_SESSION['user'])){
+if (!isset($_SESSION['user'])) {
     // si l'utilisateur n'est pas connecté
     // redirection vers la page de connexion
-    header("Location:".PATH."home");
+    header("Location:" . PATH . "home");
 }
 
 $user = $_SESSION['user'];
@@ -13,59 +13,68 @@ $id = $_GET['modifier'];
 //    Recuperons les informations sur l'image qu'on desire modifier
 $infos_staff = Staff::getOneStaff($id);
 
-if ($_POST['update']){
-    $nom= $_POST["nom"];
-    $grade= $_POST["grade"];
+if ($_POST['update']) {
+    $nom = $_POST["nom"];
+    $grade = $_POST["grade"];
     $description = $_POST['description'];
 
     $img_name = $_FILES['image']['name'];
     $tmp_name = $_FILES['image']['tmp_name'];
     $error = $_FILES['image']['error'];
 
-    if (!empty($img_name)){
-        if($error === 0){
-            $extension=pathinfo( $img_name, PATHINFO_EXTENSION);
+    if (!empty($img_name)) {
+        if ($error === 0) {
+            $extension = pathinfo($img_name, PATHINFO_EXTENSION);
             $ext = strtolower($extension);
-            $accept_ext = array('jpg','jpeg','png');
-            if (in_array($ext, $accept_ext)){
-                $new_name = uniqid($nom,true).'.'.$ext;
-                $img_path = "assets/img/team/".$new_name;
+            $accept_ext = array('jpg', 'jpeg', 'png');
+            if (in_array($ext, $accept_ext)) {
+                $new_name = uniqid($nom, true) . '.' . $ext;
+                $img_path = "assets/img/team/" . $new_name;
 
                 $path_image_db = $infos_staff['photoStaff'];
-                if (file_exists($path_image_db)){
+                if (file_exists($path_image_db)) {
                     unlink($path_image_db);
-                    $req = Staff::updateStaff($id,$nom,$grade,$img_path,$description);
+                    $req = Staff::updateStaff($id, $nom, $grade, $img_path, $description);
                     if ($req) {
-                        if (move_uploaded_file($tmp_name, $img_path)){
-                        $req = "Success";
+                        if (move_uploaded_file($tmp_name, $img_path)) {
+                            $req = "Success";
                             $infos =  "Mise a jour effectuer avec success";
+                        } else {
+                            $req = Staff::removeStaff($id);
+                            if ($req == "Success") {
+                                $infos =  "Fichier introuvable element supprime de la base de donnees";
+                            } else {
+                                $infos =  "Echec de la suppression de l'element introuvable de la base de donnees";
+                            }
                         }
-                        else{
-                        $req = "Error";
-                            $infos =  "Echec de la mise a jour";
+                        header("Location:" . PATH . "see_staff?req=$req&infos=$infos");
+                    } else {
+                        $req = Staff::removeStaff($id);
+                        if ($req == "Success") {
+                            $infos =  "Fichier introuvable element supprime de la base de donnees";
+                        } else {
+                            $infos =  "Echec de la suppression de la base de donnees";
                         }
-                        header("Location:".PATH."see_staff?req=$req&infos=$infos");
+                        header("Location:" . PATH . "see_staff?req=$req&infos=$infos");
                     }
-                    else{
-                        $infos =  "Mise a jour impossible";
-                        header("Location:".PATH."see_staff?req=$req&infos=$infos");
+                } else {
+                    $req = Staff::removeStaff($id);
+                    if ($req == "Success") {
+                        $infos =  "Fichier introuvable element supprime de la base de donnees";
+                    } else {
+                        $infos =  "Echec de la suppression de la base de donnees";
                     }
+                    header("Location:" . PATH . "see_staff?req=$req&infos=$infos");
                 }
-                else{
-                    $req = "Error";
-                    $infos =  "Image introuvable impossible d'effectuer la mise a jour";
-                    header("Location:".PATH."see_staff?req=$req&infos=$infos");
-                }
-
-            }else {
+            } else {
                 $infos = "You can't upload files of this type";
             }
-        }else {
+        } else {
             $infos = "unknown error occurred!";
         }
-    }else{
+    } else {
         $req = $db->prepare("UPDATE staff SET nomStaff = ?, gradeStaff = ?, descriptionStaff = ? WHERE idStaff = ?");
-        $req = $req->execute([$nom,$grade,$description,$id]);
+        $req = $req->execute([$nom, $grade, $description, $id]);
         if ($req) {
             $req = "Success";
             $infos = "Update successfully";
@@ -73,6 +82,6 @@ if ($_POST['update']){
             $req = "Error";
             $infos = "Update failed";
         }
-        header("Location:".PATH."see_staff?req=$req&infos=$infos");
+        header("Location:" . PATH . "see_staff?req=$req&infos=$infos");
     }
 }
