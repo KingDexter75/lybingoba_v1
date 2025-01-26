@@ -61,34 +61,116 @@
 
                     <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
                         <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                        <h3>voici un aperçu des fonctions et des services généralement offerts par l'infirmerie scolaire : </h3>
+                        <h3>Voici une présentation synthétique des résultats des examens au LYBINGOBA pour l'année académique en cours, incluant le nombre de candidats inscrits, le nombre de candidats présentés,
+                             le nombre de candidats admis, ainsi que les pourcentages de réussite </h3>
                         <p>
-                            L'infirmière scolaire est responsable de fournir des soins de santé de base aux élèves,
-                            y compris le traitement des blessures mineures, la gestion des maladies courantes
-                            (comme les rhumes ou les maux de tête) et l'administration de médicaments prescrits.
+                            <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                            • Candidats inscrits : 150
+                            • Candidats présentés : 145
+                            • Candidats admis : 130
+                            • Taux de réussite : 89,66%
                         </p>
-                        L'infirmière joue un rôle important dans l'éducation des élèves sur des sujets de santé tels que l'hygiène,
-                        la nutrition, la santé mentale, la sexualité, et les comportements à risque.
-                        Des ateliers ou des sessions d'information peuvent être organisés pour sensibiliser les élèves.
+                        <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                        Interview :
+                            • Candidats inscrits : 100
+                            • Candidats présentés : 95
+                            • Candidats admis : 85
+                            • Taux de réussite : 89,47%
                         <p>
-                            Bien que ce ne soit pas le rôle principal, l'infirmière peut offrir un soutien émotionnel
-                            aux élèves qui traversent des difficultés personnelles ou psychologiques. Elle peut également orienter
-                            les élèves vers des ressources supplémentaires,
-                            comme des conseillers scolaires.
+                        <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                        BEPC Espagnol :
+                            • Candidats inscrits : 80
+                            • Candidats présentés : 75
+                            • Candidats admis : 70
+                            • Taux de réussite : 93,33%
                         </p>
                         <p>
-                            L'infirmière peut être impliquée dans le suivi des vaccinations requises pour
-                            les élèves et peut organiser des bilans de santé périodiques pour détecter d'éventuels problèmes de santé.
+                        <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                        BEPC Allemand :
+                            • Candidats inscrits : 60
+                            • Candidats présentés : 58
+                            • Candidats admis : 45
+                            • Taux de réussite : 77,59%
                         </p>
                         <p>
-                            L'infirmière scolaire travaille souvent en collaboration avec d'autres membres du personnel éducatif,
-                            tels que les enseignants, les conseillers d'orientation et les psychologues scolaires,
-                            pour assurer une approche globale du bien-être des élèves.
+                        <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                         Probatoire A4 Espagnol :
+                            • Candidats inscrits : 70
+                            • Candidats présentés : 68
+                            • Candidats admis : 65
+                            • Taux de réussite : 95,59%
                         </p>
                         <p>
-                            le service d'infirmerie dans un lycée est un élément clé du soutien à la santé physique et mentale des élèves.
-                            Il contribue à créer un environnement scolaire sain et
-                            favorable à l'apprentissage en s'assurant que les besoins de santé des élèves sont pris en compte.
+                        <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                         Probatoire A4 Allemand :
+                            • Candidats inscrits : 50
+                            • Candidats présentés : 48
+                            • Candidats admis : 35
+                            • Taux de réussite : 72,92%
+                        </p>
+                        <p>
+                        <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                         Probatoire D :
+                            • Candidats inscrits : 70
+                            • Candidats présentés : 68
+                            • Candidats admis : 65
+                            • Taux de réussite : 95,59%
+                        </p>
+                        <p>
+                        <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                         Probatoire C :
+                            • Candidats inscrits : 50
+                            • Candidats présentés : 48
+                            • Candidats admis : 35
+                            • Taux de réussite : 72,92%
+                        </p>
+                        <p>
+                        <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                         Probatoire TI :
+                            • Candidats inscrits : 70
+                            • Candidats présentés : 68
+                            • Candidats admis : 65
+                            • Taux de réussite : 95,59%
+                        </p>
+                        <p>
+                        <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                         Baccalaureat A4 Espagnol :
+                            • Candidats inscrits : 70
+                            • Candidats présentés : 68
+                            • Candidats admis : 65
+                            • Taux de réussite : 95,59%
+                        </p>
+                        <p>
+                        <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                         Baccalaureat A4 Allemand :
+                            • Candidats inscrits : 50
+                            • Candidats présentés : 48
+                            • Candidats admis : 35
+                            • Taux de réussite : 72,92%
+                        </p>
+                        <p>
+                        <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                         Baccalaureat D :
+                            • Candidats inscrits : 70
+                            • Candidats présentés : 68
+                            • Candidats admis : 65
+                            • Taux de réussite : 95,59%
+                        </p>
+                        <p>
+                        <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                         Baccalaureat C :
+                            • Candidats inscrits : 50
+                            • Candidats présentés : 48
+                            • Candidats admis : 35
+                            • Taux de réussite : 72,92%
+                        </p>
+                        <p>
+                        <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
+                         Baccalaureat TI :
+                            • Candidats inscrits : 70
+                            • Candidats présentés : 68
+                            • Candidats admis : 65
+                            • Taux de réussite : 95,59%
                         </p>
                     </div>
 

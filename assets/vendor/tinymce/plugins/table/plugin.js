@@ -1536,7 +1536,7 @@
       canvas.width = 1;
       const canvasContext = canvas.getContext('2d');
       canvasContext.clearRect(0, 0, canvas.width, canvas.height);
-      canvasContext.fillStyle = '#FFFFFF';
+      canvasContext.fillStyle = '#ffffff';
       canvasContext.fillStyle = color;
       canvasContext.fillRect(0, 0, 1, 1);
       const rgba = canvasContext.getImageData(0, 0, 1, 1).data;

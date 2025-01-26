@@ -37,7 +37,7 @@
         <div class="carousel-item">
           <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">Section Francophone</h2>
-            <p class="animate__animated animate__fadeInUp">Nos différents Résultats aux examens Officier sont disponibles .  .</p>
+            <p class="animate__animated animate__fadeInUp">Nos différents Résultats aux examens Officier sont disponibles ...</p>
             <a href="<?= PATH ?>resultat" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
           </div>
         </div>
@@ -46,7 +46,7 @@
         <div class="carousel-item">
           <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">Section Anglophone</h2>
-            <p class="animate__animated animate__fadeInUp">Our various results in the Officer exams are available.</p>
+            <p class="animate__animated animate__fadeInUp">Our various results in the Official exams are available...</p>
             <a href="<?= PATH ?>resultat" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
           </div>
         </div>
@@ -94,7 +94,7 @@
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
             <p>
               LE LYBINGOBA (LYCEE BILINGUE DE NGODI-BAKOKO), est un établissement secondaire public. situé dans la zone de DOUALA 3e non loin de la chefferie du village NGODI-BAKOKO.
-               Le Recrutement des élèves se fait juste après leur obtention du CEP ou interview et leur offrent à la fin du cursus des baccalauréats pour les francophone et GCE Advanced 
+               Le Recrutement des élèves se fait juste après leur obtention du CEP ou First shcool leaving certificate (FSLC) et leur offrent à la fin du cursus des baccalauréats pour les francophone et GCE Advanced 
                level pour la section anglophone. 
                Créer en 2007 comme CES, est devenu LYCEE en fin d’année 2012.
                Ce lycée compte à son actif 5 administrateurs parmi les quelles deux directeurs et quatre proviseurs.
@@ -106,7 +106,8 @@
               <li><i class="bi bi-check2-circle"></i> <span>Second cycle Francophone de La 2nd A4 All et Esp en Tle A4.</span></li>
               <li><i class="bi bi-check2-circle"></i> <span>Second cycle Francophone de La 2nd C et Esp en Tle C, D et TI.</span></li>
               <li><i class="bi bi-check2-circle"></i> <span>Premier cycle Anglophone de La From 1 en From V .</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Second cycle Anglophone de La .</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Second cycle Anglophone de La lower sixth Art and upper sixth Art.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Second cycle Anglophone de La lower sixth Science and upper sixth Science.</span></li>
             </ul>
           </div>
 
@@ -114,7 +115,7 @@
             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
               <!-- <div class="parallax-bg" style="background-image: url(assets/img/services.jpg);" data-swiper-parallax="-23%"></div> -->
               <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url(assets/img/provi diko1.jpg);">
+                <div class="swiper-slide" style="background-image: url(assets/img/proviseurs/provi\ dikom.jpg); width:30vh;">
                   <div class="title" data-swiper-parallax="-300">2007 - 2011</div>
                   <div class="subtitle" data-swiper-parallax="-200">DIKOUME EBELLE EITEL</div>
                   <div class="text" data-swiper-parallax="-100">
@@ -123,7 +124,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(assets/img/proviseur\ ETa.jpg);">
+                <div class="swiper-slide" style="background-image: url(assets/img/proviseurs/provi\ kamsu.jpg); width:30vh;">
                   <div class="title" data-swiper-parallax="-300">2011 - 2012</div>
                   <div class="subtitle" data-swiper-parallax="-200">KAMSU CECILE</div>
                   <div class="text" data-swiper-parallax="-100">
@@ -132,7 +133,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(assets/img/blog/WhatsApp\ Image\ 2024-10-05\ à\ 15.00.48_d456d52c.jpg);">
+                <div class="swiper-slide" style="background-image: url(assets/img/proviseurs/provi\ kamsu.jpg); width:30vh;">
                   <div class="title" data-swiper-parallax="-300">2012 - 2013</div>
                   <div class="subtitle" data-swiper-parallax="-200">KAMSU CECILE</div>
                   <div class="text" data-swiper-parallax="-100">
@@ -141,7 +142,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(assets/img/blog/WhatsApp\ Image\ 2024-10-05\ à\ 15.00.48_d456d52c.jpg);">
+                <div class="swiper-slide" style="background-image: url(assets/img/proviseurs/provi\ ngo.jpg); width:30vh;">
                   <div class="title" data-swiper-parallax="-300">2013 - 2016</div>
                   <div class="subtitle" data-swiper-parallax="-200">NGO LOE LOUISE ROSINE</div>
                   <div class="text" data-swiper-parallax="-100">
@@ -150,7 +151,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(assets/img/blog/WhatsApp\ Image\ 2024-10-05\ à\ 15.00.48_d456d52c.jpg);">
+                <div class="swiper-slide" style="background-image: url(assets/img/proviseurs/provi\ makem.jpg); width:30vh;">
                   <div class="title" data-swiper-parallax="-300">2016 - 2019</div>
                   <div class="subtitle" data-swiper-parallax="-200">MAKEMBE FRANCOIS</div>
                   <div class="text" data-swiper-parallax="-100">
@@ -159,7 +160,7 @@
                     </p>
                   </div>
                 </div>
-                <div  class="swiper-slide" style="background-image: url(assets/img/blog/WhatsApp\ Image\ 2024-10-05\ à\ 15.00.48_d456d52c.jpg);">
+                <div  class="swiper-slide" style="background-image: url(assets/img/proviseurs/proviseu.jpg);">
                   <div class="title" data-swiper-parallax="-300">2019 - </div>
                   <div class="subtitle" data-swiper-parallax="-200">ETA JAMES NJOCK</div>
                   <div class="text" data-swiper-parallax="-100">
@@ -202,7 +203,7 @@
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
               <i class="bi bi-book"></i>
-              <h4 class="d-none d-lg-block">bibliothèque</h4>
+              <h4 class="d-none d-lg-block">Bibliothèque</h4>
             </a>
           </li>
           <li class="nav-item col-3">
@@ -239,7 +240,7 @@
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/les club/WhatsApp Image 2024-12-30 à 18.40.57_c58b98e3.jpg" alt="" class="img-fluid">
+                <img src="assets/img/digit + TP cour/pratiqu examen.jpg" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -247,7 +248,7 @@
           <div class="tab-pane fade" id="features-tab-2">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>bienvenue en salle de LABORATOIRE du LYBINGOBA</h3>
+                <h3>Bienvenue en salle de LABORATOIRE du LYBINGOBA</h3>
                 <p>
                   La salle de laboratoire des sciences du lycée est un espace lumineux et bien équipé, avec des tables de travail en acier inoxydable et des chaises confortables.
                    Elle dispose de nombreux appareils scientifiques,
@@ -269,7 +270,7 @@
               <!-- ici la modi -->
                
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/blog/WhatsApp Image 2024-12-29 à 23.03.30_e1e736ea.jpg" alt="" class="img-fluid">
+                <img src="assets/img/TP biolog.jpg" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -295,7 +296,7 @@
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/photo en plein bibiotheque.jpg" alt="" class="img-fluid">
+                <img src="assets/img/photo en plein bibiotheque.jpg" style=" height: 65vh; width:80vh;" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -320,7 +321,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/tenu de sport.jpg" alt="" class="img-fluid">
+                <img src="assets/img/eps.jpg" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -526,7 +527,7 @@
               <h3>Realisation </h3>
               <h4>du mât du lycee</h4>
               <div class="divimg">
-                <img src="assets/img/cooperative/projet coope.jpg" alt="" class="imgcoopera1">
+                <img src="assets/img/COOPRATIVE/project cooper.jpg" alt="" class="imgcoopera1">
               </div>
             </div>
           </div><!-- End Pricing Item -->
@@ -547,7 +548,7 @@
               <h3>Realisation </h3>
               <h4>la carte du cameroun</h4>
               <div class="divimg">
-                <img src="assets/img/cooperative/project cooper.jpg" alt="" class="imgcoopera1">
+                <img src="assets/img/COOPRATIVE/WhatsApp Image 2024-12-30 à 19.41.32_6a15a092.jpg" alt="" class="imgcoopera1">
               </div>
             </div>
           </div><!-- End Pricing Item -->
@@ -558,7 +559,7 @@
               <h3>Realisation</h3>
               <h4>lorem inptuinme</h4>
               <div class="divimg">
-                <img src="assets/img/cooperative/WhatsApp Image 2024-12-30 à 19.41.32_6a15a092.jpg" alt="" class="imgcoopera1">
+                <img src="assets/img/COOPRATIVE/projet coope.jpg" alt="" class="imgcoopera1">
               </div>
             </div>
           </div><!-- End Pricing Item -->
@@ -569,7 +570,7 @@
               <h3>Realisation</h3>
               <h4>lorem iput jriejs</h4>
               <div class="divimg">
-                <img src="assets/img/cooperative/projet coope.jpg" alt="" class="imgcoopera1">
+                <img src="assets/img/COOPRATIVE/projet coope.jpg" alt="" class="imgcoopera1">
               </div>
             </div>
           </div><!-- End Pricing Item -->
