@@ -115,7 +115,7 @@
             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
               <!-- <div class="parallax-bg" style="background-image: url(assets/img/services.jpg);" data-swiper-parallax="-23%"></div> -->
               <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url(assets/img/proviseurs/provi\ dikom.jpg); width:30vh;">
+                <div class="swiper-slide" style="background-image: url(assets/img/provi\ diko1.jpg); width:30vh;">
                   <div class="title" data-swiper-parallax="-300">2007 - 2011</div>
                   <div class="subtitle" data-swiper-parallax="-200">DIKOUME EBELLE EITEL</div>
                   <div class="text" data-swiper-parallax="-100">
@@ -124,7 +124,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(assets/img/proviseurs/provi\ kamsu.jpg); width:30vh;">
+                <div class="swiper-slide" style="background-image: url(assets/img/provi\ kamsu.jpg); width:30vh;">
                   <div class="title" data-swiper-parallax="-300">2011 - 2012</div>
                   <div class="subtitle" data-swiper-parallax="-200">KAMSU CECILE</div>
                   <div class="text" data-swiper-parallax="-100">
@@ -133,7 +133,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(assets/img/proviseurs/provi\ kamsu.jpg); width:30vh;">
+                <div class="swiper-slide" style="background-image: url(assets/img/provi\ kamsu.jpg); width:30vh;">
                   <div class="title" data-swiper-parallax="-300">2012 - 2013</div>
                   <div class="subtitle" data-swiper-parallax="-200">KAMSU CECILE</div>
                   <div class="text" data-swiper-parallax="-100">
@@ -142,7 +142,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(assets/img/proviseurs/provi\ ngo.jpg); width:30vh;">
+                <div class="swiper-slide" style="background-image: url(assets/img/provi\ ngo.jpg); width:30vh;">
                   <div class="title" data-swiper-parallax="-300">2013 - 2016</div>
                   <div class="subtitle" data-swiper-parallax="-200">NGO LOE LOUISE ROSINE</div>
                   <div class="text" data-swiper-parallax="-100">
@@ -151,7 +151,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(assets/img/proviseurs/provi\ makem.jpg); width:30vh;">
+                <div class="swiper-slide" style="background-image: url(assets/img/provi\ makem.jpg); width:30vh;">
                   <div class="title" data-swiper-parallax="-300">2016 - 2019</div>
                   <div class="subtitle" data-swiper-parallax="-200">MAKEMBE FRANCOIS</div>
                   <div class="text" data-swiper-parallax="-100">
@@ -160,7 +160,7 @@
                     </p>
                   </div>
                 </div>
-                <div  class="swiper-slide" style="background-image: url(assets/img/proviseurs/proviseu.jpg);">
+                <div  class="swiper-slide" style="background-image: url(assets/img/proviseu.jpg);">
                   <div class="title" data-swiper-parallax="-300">2019 - </div>
                   <div class="subtitle" data-swiper-parallax="-200">ETA JAMES NJOCK</div>
                   <div class="text" data-swiper-parallax="-100">
@@ -240,7 +240,7 @@
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/digit + TP cour/pratiqu examen.jpg" alt="" class="img-fluid">
+                <img src="assets/img/pratiqu exam.jpg" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -270,7 +270,7 @@
               <!-- ici la modi -->
                
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/TP biolog.jpg" alt="" class="img-fluid">
+                <img src="assets/img/TP biolog.jpg " alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -296,7 +296,7 @@
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/photo en plein bibiotheque.jpg" style=" height: 65vh; width:80vh;" alt="" class="img-fluid">
+                <img src="assets/img/photo en plein bibiotheque.jpg " style=" height: 65vh; width:80vh;" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -527,7 +527,7 @@
               <h3>Realisation </h3>
               <h4>du mât du lycee</h4>
               <div class="divimg">
-                <img src="assets/img/COOPRATIVE/project cooper.jpg" alt="" class="imgcoopera1">
+                <img src="assets/img/project cooper.jpg " alt="" class="imgcoopera1">
               </div>
             </div>
           </div><!-- End Pricing Item -->
@@ -548,7 +548,7 @@
               <h3>Realisation </h3>
               <h4>la carte du cameroun</h4>
               <div class="divimg">
-                <img src="assets/img/COOPRATIVE/WhatsApp Image 2024-12-30 à 19.41.32_6a15a092.jpg" alt="" class="imgcoopera1">
+                <img src="assets/img/projet coope.jpg " alt="" class="imgcoopera1">
               </div>
             </div>
           </div><!-- End Pricing Item -->
@@ -559,7 +559,7 @@
               <h3>Realisation</h3>
               <h4>lorem inptuinme</h4>
               <div class="divimg">
-                <img src="assets/img/COOPRATIVE/projet coope.jpg" alt="" class="imgcoopera1">
+                <img src="assets/img/project cooper.jpg" alt="" class="imgcoopera1">
               </div>
             </div>
           </div><!-- End Pricing Item -->
@@ -570,7 +570,7 @@
               <h3>Realisation</h3>
               <h4>lorem iput jriejs</h4>
               <div class="divimg">
-                <img src="assets/img/COOPRATIVE/projet coope.jpg" alt="" class="imgcoopera1">
+                <img src="assets/img/projet coope.jpg " alt="" class="imgcoopera1">
               </div>
             </div>
           </div><!-- End Pricing Item -->

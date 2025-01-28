@@ -93,6 +93,19 @@
                             • Taux de réussite : 77,59%
                         </p>
                         <p>
+                        <label for="" style="font-weight: bolder;"> O Level Science:</label>
+                        Number of registered candidates: 
+                         Number of candidates presented: 
+                         Number of candidates admitted: 
+                         Admission percentage: 
+                        </p>
+                        <label for="" style="font-weight: bolder;"> O Level Art:</label>
+                        Number of registered candidates: 
+                         Number of candidates presented: 
+                         Number of candidates admitted: 
+                         Admission percentage: 
+                        </p>
+                        <p>
                         <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
                          Probatoire A4 Espagnol :
                             • Candidats inscrits : 70
@@ -131,6 +144,18 @@
                             • Candidats présentés : 68
                             • Candidats admis : 65
                             • Taux de réussite : 95,59%
+                        </p>
+                        <label for="" style="font-weight: bolder;"> O Level Science:</label>
+                        Number of registered candidates: 
+                         Number of candidates presented: 
+                         Number of candidates admitted: 
+                         Admission percentage: 
+                        </p>
+                        <label for="" style="font-weight: bolder;"> O Level Art:</label>
+                        Number of registered candidates: 
+                         Number of candidates presented: 
+                         Number of candidates admitted: 
+                         Admission percentage: 
                         </p>
                         <p>
                         <label for="" style="font-weight: bolder;">Concours d'entrée en 6e :</label>
