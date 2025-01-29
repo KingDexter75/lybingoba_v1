@@ -42,7 +42,7 @@ if ($_POST['update']){
                         else {
                             $req = Document::removeDocument($id);
                             if ($req == "Success") {
-                                $infos =  "Fichier introuvable element supprime de la base de donnees";
+                                $infos =  "Impossible d'importer le fichier en raison de sa taille";
                             } else {
                                 $infos =  "Echec de la suppression de l'element introuvable de la base de donnees";
                             }
@@ -58,6 +58,9 @@ if ($_POST['update']){
                     }
                     header("Location:" . PATH . "see_document?req=$req&infos=$infos");
                 }
+            }
+            else{
+                $infos = "Extension non supporter pour le document";
             }
         }else {
             $infos = "unknown error occurred!";

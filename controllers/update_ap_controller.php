@@ -34,16 +34,27 @@ if ($_POST['update']){
                 if (file_exists($path_image_db)){
                     unlink($path_image_db);
                     $req = Ap::updateAp($id, $nom, $img_path, $departement);
-                    if ($req) {
+                    if ($req == "Success") {
                         if (move_uploaded_file($tmp_name, $img_path)){
                             $req = "Success";
                             $infos =  "Mise a jour effectuer avec success";
                         }
                         else{
-                            $req = "Error";
-                            $infos =  "Echec de la mise a jour";
+                            $req = Ap::removeAp($id);
+                            if ($req == "Success") {
+                                $infos =  "Impossible d'importer l'image en raison de sa taille trop grande";
+                            } else {
+                                $infos =  "Echec de la suppression de la base de donnees";
+                            }
                         }
                         header("Location:".PATH."see_ap?req=$req&infos=$infos");
+                    }
+                }else{
+                    $req = Ap::removeAp($id);
+                    if ($req == "Success") {
+                        $infos =  "Image introuvable element supprime de la base de donnees";
+                    } else {
+                        $infos =  "Echec de la suppression de la base de donnees";
                     }
                 }
 

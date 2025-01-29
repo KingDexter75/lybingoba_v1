@@ -45,7 +45,7 @@ if ($_POST['update']) {
                         } else {
                             $req = Examen::removeExamen($id);
                             if ($req == "Success") {
-                                $infos =  "Fichier introuvable element supprime de la base de donnees";
+                                $infos =  "Impossible d'importer le fichier en raison de sa taille";
                             } else {
                                 $infos =  "Echec de la suppression de l'element introuvable de la base de donnees";
                             }

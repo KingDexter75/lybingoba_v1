@@ -35,16 +35,16 @@ if ($_POST['update']) {
                 if (file_exists($path_image_db)) {
                     unlink($path_image_db);
                     $req = Staff::updateStaff($id, $nom, $grade, $img_path, $description);
-                    if ($req) {
+                    if ($req == "Success") {
                         if (move_uploaded_file($tmp_name, $img_path)) {
                             $req = "Success";
                             $infos =  "Mise a jour effectuer avec success";
                         } else {
                             $req = Staff::removeStaff($id);
                             if ($req == "Success") {
-                                $infos =  "Fichier introuvable element supprime de la base de donnees";
+                                $infos =  "Impossible d'importer l'image taille de l'image trop grand";
                             } else {
-                                $infos =  "Echec de la suppression de l'element introuvable de la base de donnees";
+                                $infos =  "Echec de la suppression";
                             }
                         }
                         header("Location:" . PATH . "see_staff?req=$req&infos=$infos");

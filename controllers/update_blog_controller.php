@@ -35,21 +35,28 @@ if ($_POST['update']){
                 if (file_exists($path_image_db)){
                     unlink($path_image_db);
                     $req = Blog::updateBlog($id,$img_path,$contenu,$date,$titre);
-                    if ($req) {
+                    if ($req == "Success") {
                         if (move_uploaded_file($tmp_name, $img_path)){
                             $req = "Success";
                             $infos =  "Mise a jour effectuer avec success";
                         }
                         else{
-                            $req = "Error";
-                            $infos =  "Echec de la mise a jour";
+                            $req = Blog::removeBlog($id);
+                            if ($req == "Success") {
+                                $infos =  "Impossible d'importer l'image en raison de sa taille trop grande";
+                            } else {
+                                $infos =  "Echec de la suppression de la base de donnees";
+                            }
                         }
                         header("Location:".PATH."see_blog?req=$req&infos=$infos");
+                    }
+                    else{
+                        $infos =  "Erreur survenue lors de l'ajout dans la base de donnees";
                     }
                 }
 
             }else {
-                $infos = "You can't upload files of this type";
+                $infos = "Extension de l'image non supporter";
             }
         }else {
             $infos = "unknown error occurred!";
